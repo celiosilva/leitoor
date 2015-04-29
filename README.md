@@ -61,8 +61,34 @@ Para iniciar o Leitoor em seu ambiente de desenvolvimento você precisará criar
 
 * Agora já poderá executar a aplicação (possivelmente http://localhost:8080/leitoor)  Leitoor e começar a contribuir :)!
 
-# Como Contribuir
+#Arquitetura do projeto
+O sistema possui arquitetura simples, camandas cliente servidor usando padrão MVC. A lista de tecnologias é apresentada abaixo:
 
+```
+Tecnologias Cliente
+  HTML5
+  CSS3
+  Javascript
+  
+Frameworks e bibliotecas Cliente
+  jQuery
+  Bootstrap
+  
+Tecnologias Servidor
+  Java
+  SQL
+  
+Frameworks e APIs servidor
+  Spring
+  SpringMVC
+  SpringData
+  JPA (Eclipselink)
+  JSP
+  Serlvets
+```
+
+# Como Contribuir
+#TBD
 
 
 
