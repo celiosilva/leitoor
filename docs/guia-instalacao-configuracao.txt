@@ -1,0 +1,32 @@
+Siga as informações abaixo para instalar todos os componentes necessários para o ambiente de desenvolvimento.
+
++---------------------------------+
+	INSTALAR JAVA JDK
++---------------------------------+
+1. Fazer download do Java JDK mais recente a partir de http://www.oracle.com/technetwork/java/javase/downloads/index.html
+2. Instalar o pacote baixado normalmente e posteriormente configurar o java_home criando a variável de ambiente JAVA_HOME apontando para a localização do pacote. Ex: "c:\arquivos de programas\java\jdk...XXX"
+3. Alterar a variável de ambiente chamada "Path" adicionando ao final ";%JAVA_HOME%\bin" (sem aspas)
+4. Testar abrindo um novo* prompt de comando e digitar java -version (deverá exibir as informações do Java instalado)
+
++---------------------------------+
+	INSTALAR ECLIPSE STS
++---------------------------------+
+1. Fazer a instalação do arquivo spring-tool-suite-3.6.3.SR1-e4.4.1-win32-x86_64
+2. Localizar o local de instação e alterar o arquivo STS.ini adicionando o parâmetro ao final do arquivo: -Dfile.encoding=UTF-8
+3. Iniciar o eclipse
++---------------------------------+
+4. Abrir o eclipsemarket em Help >> Eclipse Marketplace, localizar e instalar o plugin AnyEdit Tools
+5. Configurar tabs para espaços em Window >> Preferences >> General >> Editors >> AnyEdit Tools e configurar: Tabs <-> to Spaces com o valor de 4 espaços por tab
++---------------------------------+
+6. Configurar o formator de código da Delogic styleformater.xml, fazendo import do arquivo em Window >> Preferences >> Java >> Code Style >> Formatter.
++---------------------------------+
+7. Abrir o eclipsemarket em Help >> Eclipse Marketplace, localizar e instalar o plugin Wireframe Sketcher
+8. Adicionar a licensa de uso em Window >> Preferences >> WireframeSketcher >> License Key (solicitar a licença para edição de wireframes)
++---------------------------------+
+	INSTALAR MAVEN
++---------------------------------+
+1. Descompactar o conteúdo do pacote do maven disponível
+2. Configurar o Maven criando uma variável de ambiente M2_HOME apontando para a localização do pacote. Ex: c:\java\apache-maven-3.0.3
+3. Alterar a variável de ambiente Path adicionando ;%M2_HOME%\bin
+4. Verificar se o Maven foi configurado corretamente abrindo um novo prompt de comando e executando mvn -version
+5. Trocar o arquivo conf/settings.xml pelo arquivo settings.xml provido neste diretório
