@@ -19,14 +19,14 @@ Git 		1.8.3          	              VCS
 Maven 		3.0.X                         SCM
 Tomcat 		7.X                           Container/Servidor web
 pgAdmin 	3                             Ferramenta acesso banco de dados (ou SqlDeveloper 4.X)
-**Use o tomcat que está incluso no projeto, já vem configurado com log e drivers para banco de dados**
 ```
+**Use o tomcat que está incluso no projeto, já vem configurado com log e drivers para banco de dados**
 
 ## Configuração do ambiente
 1. Instale as tecnologias Java, Eclipse, Git, Maven e sua ferramenta de banco de dados preferida. Se tiver problemas com essa configuração veja como aconselho configurar neste <a href="https://github.com/celiosilva/leitoor/blob/master/docs/guia-instalacao-configuracao.txt" target="blank"> link</a>.
-2. Configure o seu Eclipse com o arquivo de formatação contido <a href="https://github.com/celiosilva/leitoor/blob/master/docs/styleformatter.xml" download> aqui </a>.
+2. Configure o seu Eclipse com o arquivo de formatação contido <a href="https://github.com/celiosilva/leitoor/blob/master/docs/styleformatter.xml" download="styleformatter.xml"> aqui </a>.
 3. Instale o Postgres criando o usuário root (criado por padrão) com a senha "manager" na porta 5432 (padrão).
-4. Instale o Maven e use o arquivo de configuração settings contido <a href="https://github.com/celiosilva/leitoor/blob/master/docs/settings.xml" download>aqui</a>.
+4. Instale o Maven e use o arquivo de configuração settings contido <a href="https://github.com/celiosilva/leitoor/blob/master/docs/settings.xml" download="settings.xml">aqui</a>.
 5. Configure o Tomcat dentro do Eclipse adicionando **use-o sem mover de local para que seja atualizado com updates do projeto**
 6. Faça checkout do projeto através do github no botão ao lado &rarr;.
 
