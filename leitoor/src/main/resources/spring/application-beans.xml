@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ctx="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:sec="http://www.springframework.org/schema/security"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                        http://www.springframework.org/schema/aop
+                        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+                        http://www.springframework.org/schema/data/jpa
+                        http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+                        http://www.springframework.org/schema/security
+                        http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+    <!-- CONFIGURAÇÃO DOS SERVIÇOS ========================================================================= -->
+    <ctx:component-scan
+        base-package="br.com.delogic.leitoor.service,
+                      br.com.delogic.leitoor.repository" />
+    <ctx:annotation-config />
+
+    <!-- JPA E REPOSITÓRIOS ================================================================================ -->
+    <tx:annotation-driven transaction-manager="transactionManager" />
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+    <bean id="entityManagerFactory"
+        class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceXmlLocation" value="classpath:/META-INF/persistence.xml" />
+        <property name="persistenceUnitName" value="leitoor" />
+        <property name="dataSource" ref="leitoords" />
+        <property name="jpaVendorAdapter">
+            <bean
+                class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter" />
+        </property>
+        <property name="jpaPropertyMap">
+            <map>
+                <entry key="eclipselink.logging.level" value="ALL" />
+                <entry key="eclipselink.logging.parameters" value="true" />
+                <entry key="eclipselink.logging.exceptions" value="true" />
+                <entry key="eclipselink.logging.logger"
+                    value="br.com.delogic.leitoor.util.csa.EclipselinkToSlf4jLogger" />
+            </map>
+        </property>
+    </bean>
+
+    <jpa:repositories base-package="br.com.delogic.leitoor.repository"
+        factory-class="br.com.delogic.leitoor.repository.config.CustomRepositoryFactoryBean" />
+
+    <bean id="messageSource"
+        class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basename" value="classpath:mensagens-erro-spring" />
+        <property name="defaultEncoding" value="UTF-8" />
+    </bean>
+
+    <bean id="emailManager" class="br.com.delogic.csa.manager.email.EmailManagerImpl" />
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.gmail.com" />
+        <property name="port" value="587" />
+        <property name="username" ref="EMAIL.USUARIO" />
+        <property name="password" ref="EMAIL.SENHA" />
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- SPRING SECURITY =================================================================================== -->
+    <sec:http auto-config="true" use-expressions="true">
+
+        <sec:intercept-url pattern="/professor/**" access="hasRole('PROFESSOR')" />
+
+        <sec:intercept-url pattern="/aluno/**"
+            access="hasAnyRole('ALUNO', 'PROFESSOR')" />
+
+        <sec:access-denied-handler error-page="/login" />
+
+        <sec:form-login login-page="/login" />
+        <sec:logout logout-url="/logout" delete-cookies="JSESSIONID"
+            invalidate-session="true" />
+
+    </sec:http>
+
+    <sec:authentication-manager alias="authenticationManager">
+        <sec:authentication-provider>
+            <sec:jdbc-user-service data-source-ref="leitoords"
+                users-by-username-query="select email, coalesce(coalesce(idfacebook, senha), idgoogle) as pass, true as ativo from usuario where email=?"
+                authorities-by-username-query="select email, perfil from usuario where email=?  " />
+        </sec:authentication-provider>
+    </sec:authentication-manager>
+
+    <!-- QUERIES E CONSULTAS NO BANCO =================================================================================== -->
+    <bean id="rangeQuery"
+        class="br.com.delogic.csa.repository.sql.PostgreSqlQueryRangeBuilder" />
+
+    <bean id="resumoMateriais" class="br.com.delogic.csa.repository.sql.SqlQuery"
+        p:select="mc.id as idmaterialconfigurado,  at.descricao as atividade, mt.numeropaginas as numeropaginas, count(cpq.questoes_id) as totalquestoes"
+        p:from="materialconfigurado mc
+                inner join material mt on mc.material_id = mt.id
+                inner join atividade at on at.materialconfigurado_id = mc.id
+                 left join configuracaopagina cp on mc.id = cp.materialconfigurado_id
+                 left join configuracaopagina_questao cpq on cpq.configuracaopagina_id = cp.id"
+        p:into="br.com.delogic.leitoor.view.ResumoMaterial" p:groupBy="mc.id, at.id, mt.id">
+        <property name="parameterizedAnd">
+            <map>
+                <entry key="idProfessor:number" value="mc.professor_id = :idProfessor" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="resumoTarefas" class="br.com.delogic.csa.repository.sql.SqlQuery"
+        p:select="ta.id as idTarefa, ta.descricaoatividade as tarefa, coalesce(tu.nome, count(te.id) || ' Alunos') as turma,
+                  (coalesce((((select count(*)::decimal from leitura le inner join tarefaenviada te2 on le.tarefaenviada_id = te2.id where te2.tarefa_id = ta.id) /
+                  nullif(count(te.id)::decimal * mt.numeropaginas::decimal, 0))), 0) * 100)::integer as percentualcompleto,
+                  mt.titulo as material"
+        p:from="tarefa ta
+                 inner join materialconfigurado mc on ta.materialconfigurado_id = mc.id
+                  left join turma tu on ta.turma_id = tu.id
+                 inner join material mt on mc.material_id = mt.id
+                 inner join tarefaenviada te on ta.id = te.tarefa_id"
+        p:groupBy="ta.id, mt.id, mc.id, tu.id" p:into="br.com.delogic.leitoor.view.ResumoTarefa">
+        <property name="parameterizedAnd">
+            <map>
+                <entry key="idProfessor:number" value="ta.professor_id = :idProfessor" />
+                <entry key="idTarefa:number" value="ta.id = :idTarefa" />
+            </map>
+        </property>
+        <property name="parameterizedOrderBy">
+            <map>
+                <entry key="percentualCompleto" value="percentualCompleto" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="resumoAcompanhamento" class="br.com.delogic.csa.repository.sql.SqlQuery"
+        p:select="te.id as idTarefaEnviada, us.nome,
+                  ((coalesce((select count(*)::decimal from leitura le where le.tarefaenviada_id = te.id and datafinal is not null), 0) / mt.numeropaginas::decimal) * 100)::int as percentual_leitura,
+                  (select count(*)::decimal from resposta re where te.id = re.tarefaenviada_id and re.avaliacao = 'CORRETO') as acertos,
+                  (select count(*)::decimal from resposta re where te.id = re.tarefaenviada_id and re.avaliacao = 'INCORRETO') as erros,
+                  (select count(*)::decimal from configuracaopagina cp inner join configuracaopagina_questao cpq on cpq.configuracaopagina_id = cp.id where cp.materialconfigurado_id  = mc.id) as questoes,
+                  ((select count(*)::decimal from resposta re where te.id = re.tarefaenviada_id) /
+                  nullif((select count(*)::decimal from configuracaopagina cp inner join configuracaopagina_questao cpq on cpq.configuracaopagina_id = cp.id where cp.materialconfigurado_id  = mc.id), 0) * 100)::int percentual_questionario"
+        p:from="tarefaenviada te
+                inner join tarefa tf on te.tarefa_id = tf.id
+                inner join materialconfigurado mc on tf.materialconfigurado_id = mc.id
+                inner join material mt on mc.material_id = mt.id
+                inner join usuario us on te.aluno_id = us.id"
+        p:into="br.com.delogic.leitoor.view.ResumoAcompanhamento" p:groupBy="us.nome, te.id, mt.numeropaginas, mc.id">
+        <property name="parameterizedAnd">
+            <map>
+                <entry key="idTarefaEnviada:number" value="te.id = :idTarefaEnviada" />
+                <entry key="idTarefa:number" value="tf.id = :idTarefa" />
+            </map>
+        </property>
+        <property name="parameterizedOrderBy">
+            <map>
+                <entry key="nome" value="us.nome" />
+                <entry key="acertos" value="acertos, us.nome" />
+            </map>
+        </property>
+    </bean>
+
+
+</beans>

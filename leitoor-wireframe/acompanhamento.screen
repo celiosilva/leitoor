@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="97" measuredWidth="1200" measuredHeight="1200">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="16" height="49"/>
+      <widgets ref="11" height="1200"/>
+      <widgets ref="12" height="49"/>
+      <widgets ref="12/1" height="49"/>
+      <widgets ref="12/4" y="4"/>
+      <widgets ref="12/8" height="49"/>
+      <widgets ref="12/9" height="49"/>
+      <widgets ref="12/10" height="49"/>
+      <widgets ref="12/11" height="49"/>
+      <widgets ref="12/12" height="49"/>
+      <widgets ref="12/13" height="49"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="174" x="130" y="140" height="677" measuredWidth="940" measuredHeight="677">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgets ref="1" x="-566" y="-153" width="940" height="677"/>
+      <widgets ref="2" x="-566" y="-153" width="940"/>
+      <widgets ref="4" x="253" y="-153" link="acompanhamento-que-e.screen"/>
+      <widgets ref="5" x="-566" y="-153" width="255" text="ATIVIDADE BI 1 - 6ª B"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="305" x="440" y="200" width="305" height="548" measuredWidth="305" measuredHeight="548" background="#eeeeee" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="306" x="760" y="200" width="300" height="548" measuredWidth="300" measuredHeight="548" background="#b4dbeb" alpha="192" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="185" x="248" y="70" measuredWidth="282" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Acompanhamento"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="249" x="440" y="220" width="305" text="Leitura 98% Concluída" measuredWidth="305" measuredHeight="87" textAlignment="Center" foreground="#a9c638" icon="pie-chart (xlarge)" iconPosition="top">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="250" x="760" y="220" width="300" text="Questionário 60% Concluído" measuredWidth="300" measuredHeight="87" textAlignment="Center" foreground="#0000ff" icon="pie-chart (xlarge)" iconPosition="top">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="253" x="145" y="366" width="280" text="Rafael da Silva" measuredWidth="280" measuredHeight="36" link="acompanhamento-individual.screen">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="261" x="894" y="366" measuredWidth="155" measuredHeight="36" link="acompanhamento-perguntas.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="155" height="36" text="Ver Respostas {assets/external-link}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="262" x="145" y="415" width="280" text="Jose da Silva Alencar" measuredWidth="280" measuredHeight="36" link="acompanhamento-individual.screen">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="267" x="145" y="465" width="280" text="Ricardo Ambrozio Morais" measuredWidth="280" measuredHeight="36" link="acompanhamento-individual.screen">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="272" x="145" y="515" width="280" text="Juliana Maria Lopes" measuredWidth="280" measuredHeight="36" link="acompanhamento-individual.screen">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="278" x="776" y="366" width="100" height="36" text="%(color:#49AFCD)10% / %(color:red)3% / %(color:black)16%" measuredWidth="100" measuredHeight="36" border="false" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="279" x="776" y="320" width="273" height="36" text="%(color:#49AFCD)Acertos% / %(color:red)Erros% / %(color:black)Total% de Pontos" measuredWidth="273" measuredHeight="36" border="false" shapeType="rectangle-rounded">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="281" x="776" y="415" width="100" height="36" text="%(color:#49AFCD)10% / %(color:red)3% / %(color:black)16%" measuredWidth="100" measuredHeight="36" border="false" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="283" x="776" y="465" width="100" height="36" text="%(color:#49AFCD)10% / %(color:red)3% / %(color:black)16%" measuredWidth="100" measuredHeight="36" border="false" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="285" x="776" y="515" width="100" height="36" text="%(color:#49AFCD)10% / %(color:red)3% / %(color:black)16%" measuredWidth="100" measuredHeight="36" border="false" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="286" x="130" y="70" measuredWidth="125" measuredHeight="56" link="home-completa.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="%(color:gray)%(font:-5)Home{assets/double-angle-right}%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="289" x="456" y="366" width="273" measuredWidth="273" measuredHeight="36">
+    <widgets xsi:type="model:Master" id="254" width="273" measuredWidth="273" measuredHeight="36" link="acompanhamento-individual.screen">
+      <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Progress"/>
+      <overrides>
+        <widgets ref="102" width="273" height="36">
+          <attributes key="background" value="#a9c638"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Label" id="287" x="115" y="6" width="43" text="50%" measuredWidth="43" measuredHeight="23">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="290" x="456" y="415" width="273" measuredWidth="273" measuredHeight="36">
+    <widgets xsi:type="model:Master" id="291" width="273" measuredWidth="273" measuredHeight="36" link="acompanhamento-individual.screen">
+      <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Progress"/>
+      <overrides>
+        <widgets ref="102" width="273" height="36">
+          <attributes key="background" value="#a9c638"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Label" id="292" x="120" y="6" width="39" text="50%" measuredWidth="39" measuredHeight="23">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="293" x="456" y="465" width="273" measuredWidth="273" measuredHeight="36">
+    <widgets xsi:type="model:Master" id="294" width="273" measuredWidth="273" measuredHeight="36" link="acompanhamento-individual.screen">
+      <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Progress"/>
+      <overrides>
+        <widgets ref="102" width="273" height="36">
+          <attributes key="background" value="#a9c638"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Label" id="295" x="120" y="6" width="50" text="50%" measuredWidth="50" measuredHeight="23">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="296" x="456" y="515" width="273" measuredWidth="273" measuredHeight="36">
+    <widgets xsi:type="model:Master" id="297" width="273" measuredWidth="273" measuredHeight="36" link="acompanhamento-individual.screen">
+      <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Progress"/>
+      <overrides>
+        <widgets ref="102" width="273" height="36">
+          <attributes key="background" value="#a9c638"/>
+          <attributes key="value" value="100"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Label" id="298" x="120" y="6" width="50" text="100%" measuredWidth="50" measuredHeight="23">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Master" id="301" x="894" y="415" measuredWidth="155" measuredHeight="36" link="acompanhamento-perguntas.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="155" height="36" text="Ver Respostas {assets/external-link}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="302" x="894" y="465" measuredWidth="155" measuredHeight="36" link="acompanhamento-perguntas.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="155" height="36" text="Ver Respostas {assets/external-link}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="303" x="894" y="515" measuredWidth="155" measuredHeight="36" link="acompanhamento-perguntas.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="155" height="36" text="Ver Respostas {assets/external-link}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="307" x="456" y="320" width="273" height="36" text="Os Lusiadas" measuredWidth="273" measuredHeight="36" border="false" shapeType="rectangle-rounded">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="308" x="136" y="220" width="295" text="Atividade 84% Concluída" measuredWidth="295" measuredHeight="87" textAlignment="Center" foreground="#444444" icon="pie-chart (xlarge)" iconPosition="top">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="309" x="145" y="320" width="280" height="36" text="Alunos" measuredWidth="280" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle-rounded">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="318" x="147" y="782" text="{assets/long-arrow-left} Voltar" measuredWidth="63" measuredHeight="28" link="home-completa.screen">
+    <font size="15px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

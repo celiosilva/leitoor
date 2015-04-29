@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
+  <widgets xsi:type="model:Master" id="97" measuredWidth="1200" measuredHeight="1200">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="16" height="49"/>
+      <widgets ref="11" height="1200"/>
+      <widgets ref="12" height="49"/>
+      <widgets ref="12/1" height="49"/>
+      <widgets ref="12/4" y="4"/>
+      <widgets ref="12/8" height="49"/>
+      <widgets ref="12/9" height="49"/>
+      <widgets ref="12/10" height="49"/>
+      <widgets ref="12/11" height="49"/>
+      <widgets ref="12/12" height="49"/>
+      <widgets ref="12/13" height="49"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="249" width="1200" height="1200" text="CONTEÚDO OBFUSCADO PARA DAR FOCO À MENSAGEM DE SUCESSO\nCLIQUE NO BOTÃO FECHAR ( x ) PARA CONTINUAR" measuredWidth="1200" measuredHeight="1200" alpha="231" foreground="#ffffff" shapeType="rectangle">
+    <font size="25px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="188" x="130" y="70" width="940" height="50" text="{info}  A atividade foi enviada com sucesso para 27 alunos!" measuredWidth="940" measuredHeight="50" background="#5bc0de" border="false" link="home-completa.screen" textAlignment="Left" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="189" x="1032" y="79" text="{assets/remove}" measuredWidth="30" measuredHeight="32" foreground="#ffffff" link="home-completa.screen">
+    <font size="20px" bold="false"/>
+  </widgets>
+  <hRuler/>
+  <vRuler>
+    <guides position="504"/>
+  </vRuler>
+  <font size="12px"/>
+</model:Screen>

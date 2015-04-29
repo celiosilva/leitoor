@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="97" measuredWidth="1200" measuredHeight="1200">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="12/10">
+        <attributes key="background" value="#000000"/>
+      </widgets>
+      <widgets ref="12/8">
+        <attributes key="background" value="#333333"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="119" y="50" measuredWidth="1200" measuredHeight="80">
+    <screen xsi:type="model:Screen" href="assets/wizard.screen#/"/>
+    <overrides>
+      <widgets ref="1">
+        <attributes key="background" value="#eeeeee"/>
+      </widgets>
+      <widgets ref="7">
+        <attributes key="foreground" value="#eeeeee"/>
+      </widgets>
+      <widgets ref="14">
+        <attributes key="foreground" value="#eeeeee"/>
+      </widgets>
+      <widgets ref="13">
+        <attributes key="background" value="#eeeeee"/>
+      </widgets>
+      <widgets ref="15">
+        <attributes key="background" value="#000000"/>
+      </widgets>
+      <widgets ref="16">
+        <attributes key="foreground" value="#000000"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="291" x="130" y="230" height="390" measuredWidth="940" measuredHeight="390">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgetChanges xsi:type="o:Delete" ref="4"/>
+      <widgets ref="1" x="-86" y="-84" width="940" height="390"/>
+      <widgets ref="2" x="-86" y="-84" width="940"/>
+      <widgets ref="5" x="-86" y="-84" width="207" text="LISTA DE E-MAILS"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="120" x="130" y="140" width="272" measuredWidth="0" measuredHeight="0"/>
+  <widgets xsi:type="model:Master" id="272" x="153" y="560" measuredWidth="176" measuredHeight="40" link="home-com-sucesso.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="176" height="40" text="Enviar Atividade {direction}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Link" id="273" x="352" y="566" text="{assets/long-arrow-left} Voltar" measuredWidth="63" measuredHeight="28" link="criar-atividade-config-por-pagina.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="326" x="160" y="300" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Identificação do grupo&#xD;&#xA;%(font:-2)%(color:555)Nome do grupo ou turma%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="328" x="359" y="300" measuredWidth="305" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="329" width="305" measuredWidth="305" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="305" text="Ex. 6ª A, 1º B Manhã"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="330" x="256" y="2" width="47" measuredWidth="47" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="47" height="36" text="30">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Master" id="334" x="160" y="360" height="105" measuredWidth="200" measuredHeight="105">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="105" text="Lista de E-mails&#xD;&#xA;%(font:-2)%(color:555)Alunos que receberão as atividades. Separados por espaço ou , (virgula)%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="340" x="359" y="360" height="177" measuredWidth="680" measuredHeight="177">
+    <widgets xsi:type="model:Master" id="338" height="177" measuredWidth="680" measuredHeight="177">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Area"/>
+      <overrides>
+        <widgets ref="16" width="680" height="177" text="Ex. joaozinho@gmail.com, maria@yahoo.com.br carlos@meuemail.com"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="339" x="637" y="2" height="173" measuredWidth="41" measuredHeight="173" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="41" height="173" text="999">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Master" id="341" x="129" y="152" measuredWidth="877" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Alunos %(font:-3)%(color:gray)// Informe e-mails dos alunos para enviar o link de acesso%%"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

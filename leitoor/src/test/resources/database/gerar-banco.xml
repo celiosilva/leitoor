@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ctx="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                        http://www.springframework.org/schema/aop
+                        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+                        http://www.springframework.org/schema/data/jpa
+                        http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+                        http://www.springframework.org/schema/jdbc
+                        http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+    <!-- CRIAR O BANCO DE DADOS LEITOOR ================================================================= -->
+    <bean id="rootDataSource" class="org.apache.tomcat.jdbc.pool.DataSource">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost:5432/postgres" />
+        <property name="username" value="postgres" />
+        <property name="password" value="manager" />
+    </bean>
+
+    <!-- INICILIZAR O BANCO DE DADOS =================================================================== -->
+    <bean id="sqlDS" class="org.apache.tomcat.jdbc.pool.DataSource">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost:5432/leitoor" />
+        <property name="username" value="postgres" />
+        <property name="password" value="manager" />
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager" />
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="emf" />
+    </bean>
+    <bean id="emf"
+        class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceXmlLocation" value="classpath:/META-INF/persistence.xml" />
+        <property name="persistenceUnitName" value="leitoor" />
+        <property name="dataSource" ref="sqlDS" />
+        <property name="jpaVendorAdapter">
+            <bean
+                class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter">
+                <property name="generateDdl" value="true" />
+            </bean>
+        </property>
+        <property name="jpaPropertyMap">
+            <map>
+                <!-- sql-script irá criar somente o script sem mexer no banco -->
+                <!-- database irá alterar o banco mas não irá criar o script -->
+                <!-- both irá alterar o banco e criar o arquivo -->
+                <!-- <entry key="eclipselink.ddl-generation" value="create-tables" /> -->
+                <!-- <entry key="eclipselink.ddl-generation.output-mode" value="both"
+                    /> -->
+                <entry key="eclipselink.logging.level" value="ALL" />
+                <entry key="eclipselink.logging.parameters" value="true" />
+                <entry key="eclipselink.logging.exceptions" value="true" />
+                <entry key="eclipselink.logging.logger"
+                    value="br.com.delogic.leitoor.util.csa.EclipselinkToSlf4jLogger" />
+            </map>
+        </property>
+    </bean>
+
+    <!-- ================================================ -->
+    <!-- SCRIPTS PARA CRIAÇÃO DO BANCO EM DESENVOLVIMENTO -->
+    <!-- ================================================ -->
+    <!-- 1. APAGAR E RECRIAR O BANCO DE DADOS =============================================================== -->
+    <jdbc:initialize-database data-source="rootDataSource">
+        <jdbc:script location="classpath:database/drop-database.sql"
+            encoding="UTF-8" />
+        <jdbc:script location="classpath:database/create-database.sql"
+            encoding="UTF-8" />
+    </jdbc:initialize-database>
+
+    <!-- 2. EXECUTAR TODOS OS SCRIPTS QUE COMEÇAM COM V...sql =============================================== -->
+    <bean id="flyway" class="org.flywaydb.core.Flyway" init-method="migrate"
+        p:dataSource-ref="sqlDS" p:locations="database" p:outOfOrder="true"
+        depends-on="emf" />
+
+    <!-- 3. COMPILAR FUNÇÕES E PROCEDURES =================================================================== -->
+    <jdbc:initialize-database data-source="sqlDS">
+        <jdbc:script location="classpath:database/functions.sql"
+            encoding="UTF-8" separator="/**/" />
+    </jdbc:initialize-database>
+
+</beans>

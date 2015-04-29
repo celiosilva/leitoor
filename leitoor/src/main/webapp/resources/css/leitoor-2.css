@@ -1,0 +1,118 @@
+.leitoor-tab {
+    background-color: #fff;
+}
+
+.leitoor-tab .nav-tabs li,.leitoor-tab .nav-tabs li a,.leitoor-tab .nav-tabs li.active a,.leitoor-tab .nav-tabs li.active a:hover,.leitoor-tab .nav-tabs li.active a:focus,.leitoor-tab .nav-tabs
+    {
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+    margin-right: 0;
+    background-color: #fff;
+    color: #555;
+}
+
+.leitoor-tab .nav-tabs li,.leitoor-tab .nav-tabs li a {
+    background-color: #777;
+    color: #fff;
+}
+
+.leitoor-tab .nav-tabs {
+    margin-bottom: 0;
+    background-color: #CBCBCB;
+}
+
+.leitoor-tab .tab-pane {
+    padding: 20px 20px 0 20px;
+}
+
+.titulo-wizard {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.leitoor-wizard {
+    border: none !important;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    background: #428bca;
+    color: #ffffff;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity = 0);
+    opacity: 0;
+    outline: none;
+    background-color: #428bca !important;
+    cursor: inherit;
+    display: block;
+}
+
+.icone-atividade {
+    margin-bottom: 15px;
+}
+
+.icone-atividade .icone-painel {
+    background-color: #F2F2F2;
+    padding: 10px;
+    height: 130px;
+}
+
+.circulo-warning {
+    background-color: #FEEFB3;
+    color: #9F6000;
+}
+
+.circulo-info {
+    background-color: #BDE5F8;
+    color: #00529B;
+}
+
+.circulo-success {
+    background-color: #DFF2BF;
+    color: #4F8A6C;
+}
+
+.icone-atividade a {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.icone-atividade .triangulo {
+    width: 0;
+    height: 0;
+    border-top: 30px solid #fff;
+    border-left: 30px solid transparent;
+}
+
+.icone-tarefa {
+    margin-bottom: 15px;
+}
+
+.icone-tarefa .icone-painel {
+    padding: 20px 10px 10px 10px;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+.form-cadastro .control-label {
+    padding-top: 0;
+    margin-bottom: 5px;
+    text-align: left;
+}

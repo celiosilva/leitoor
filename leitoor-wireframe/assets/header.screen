@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Panel" id="1" width="960" height="50" measuredWidth="960" measuredHeight="50" background="#333333" foreground="#333333"/>
+  <widgets xsi:type="model:Label" id="4" x="10" y="5" width="79" text="Leitoor" measuredWidth="79" measuredHeight="40" foreground="#ffffff">
+    <font size="24px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="8" x="104" height="50" text="Home" measuredWidth="70" measuredHeight="50" background="#000000" foreground="#ffffff" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="9" x="173" height="50" text="Atividades" measuredWidth="109" measuredHeight="50" background="#333333" foreground="#ffffff" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="10" x="281" height="50" text="Materiais" measuredWidth="97" measuredHeight="50" background="#333333" foreground="#ffffff" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="11" x="384" height="50" text="Alunos e Turmas" measuredWidth="160" measuredHeight="50" background="#333333" foreground="#ffffff" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="12" x="746" height="50" text="Celio Silva {desc}" measuredWidth="136" measuredHeight="50" background="#333333" foreground="#ffffff" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="13" x="881" height="50" text="Sair {shutdown}" measuredWidth="79" measuredHeight="50" background="#333333" foreground="#ffffff" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

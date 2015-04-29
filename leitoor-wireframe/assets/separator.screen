@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:WidgetGroup" id="4" x="10" y="5" width="200" height="8" measuredWidth="200" measuredHeight="7">
+    <widgets xsi:type="model:HLine" id="1" width="200" measuredWidth="200" measuredHeight="6" layoutParams="anchor-left,anchor-right|anchor-top,anchor-bottom" foreground="#cccccc"/>
+    <widgets xsi:type="model:HLine" id="2" y="1" width="200" measuredWidth="200" measuredHeight="6" layoutParams="anchor-left,anchor-right|anchor-top,anchor-bottom" foreground="#ffffff"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

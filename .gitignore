@@ -1,0 +1,3 @@
+/tomcat/logs/*
+/tomcat/work/*
+/tomcat/webapps/probe/*

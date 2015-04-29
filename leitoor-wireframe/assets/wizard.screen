@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Shape" id="6" width="1200" height="80" measuredWidth="1200" measuredHeight="80" background="#a9c638" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="1" x="298" y="22" width="36" height="36" text="1" measuredWidth="36" measuredHeight="36" foreground="#ffffff" border="false" link="../criar-atividade-materia-enviar.screen">
+    <font size="20px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="7" x="338" y="22" text="Escolher Material{assets/angle-right}" measuredWidth="179" measuredHeight="36" textAlignment="Center" foreground="#ffffff" link="../criar-atividade-materia-enviar.screen">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="13" x="516" y="22" width="36" height="36" text="2" measuredWidth="36" measuredHeight="36" foreground="#ffffff" border="false" link="../criar-atividade-config-geral.screen">
+    <font size="20px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="14" x="556" y="22" text="Configurar Atividade{assets/angle-right}" measuredWidth="212" measuredHeight="36" foreground="#ffffff" link="../criar-atividade-config-geral.screen">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="15" x="767" y="22" width="36" height="36" text="3" measuredWidth="36" measuredHeight="36" foreground="#ffffff" border="false" link="../criar-atividade-informar-alunos.screen">
+    <font size="20px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="807" y="22" text="Informar Alunos e Enviar //" measuredWidth="240" measuredHeight="36" foreground="#ffffff" link="../criar-atividade-informar-alunos.screen">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="130" y="22" text="Criar Atividade //" measuredWidth="157" measuredHeight="36" textAlignment="Center" foreground="#ffffff">
+    <font size="20px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

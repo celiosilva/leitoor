@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
+  <widgets xsi:type="model:Master" id="406" height="1500" measuredWidth="1200" measuredHeight="1500">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="15" height="1500"/>
+      <widgets ref="11" height="1500"/>
+      <widgets ref="11/28" height="1500"/>
+      <widgets ref="11/15" height="1500"/>
+      <widgets ref="11/16" height="1500"/>
+      <widgets ref="11/17" height="1500"/>
+      <widgets ref="11/18" height="1500"/>
+      <widgets ref="11/19" height="1500"/>
+      <widgets ref="11/20" height="1500"/>
+      <widgets ref="11/21" height="1500"/>
+      <widgets ref="11/22" height="1500"/>
+      <widgets ref="11/23" height="1500"/>
+      <widgets ref="11/24" height="1500"/>
+      <widgets ref="11/25" height="1500"/>
+      <widgets ref="11/26" height="1500"/>
+      <widgets ref="11/27" height="1500"/>
+      <widgets ref="12/12" text="Bem Vindo João"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="120" x="130" y="140" width="272" measuredWidth="0" measuredHeight="0"/>
+  <widgets xsi:type="model:Master" id="421" x="129" y="70" measuredWidth="307" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Atividade Concluída"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="422" x="130" y="140" width="940" height="780" measuredWidth="940" measuredHeight="780" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="423" x="150" y="168" text="Parabéns por ter concluído essa atividade!" measuredWidth="298" measuredHeight="29">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="425" x="150" y="208" width="889" height="49" text="Aproveitando essa oportunidade poderia responder a nossa pesquisa de satisfação? Com a sua opnião os professores podem criar atividades melhores e nós poderemos melhorar o Leitoor ainda mais! Muito obrigado pela sua dedicação!" measuredWidth="889" measuredHeight="49">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="427" x="150" y="268" measuredWidth="382" measuredHeight="43">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%203"/>
+    <overrides>
+      <widgets ref="131" text="Pesquisa de Satisfação do Aluno"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Text" id="428" x="150" y="320" width="889" height="23" text="1 - Como você se sente ao finalizar essa atividade ?" measuredWidth="889" measuredHeight="23">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="429" x="150" y="420" width="889" height="23" text="2 - Onde você está agora ?" measuredWidth="889" measuredHeight="23">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="430" x="150" y="355" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Muito bem ;D">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="431" x="280" y="355" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Bem :)">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="432" x="410" y="355" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Normal :|">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="434" x="540" y="355" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Péssimo :\">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="435" x="280" y="455" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Casa {home}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="436" x="150" y="455" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Escola {assets/book}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="439" x="410" y="455" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Amigo {usergroup}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Text" id="440" x="150" y="520" width="889" height="23" text="3 - Você gosta desse tipo de atividade ?" measuredWidth="889" measuredHeight="23">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="441" x="150" y="555" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Muito {assets/thumbs-up-alt} {assets/thumbs-up-alt}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="442" x="280" y="555" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Gosto {assets/thumbs-up-alt}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="443" x="410" y="555" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Não gosto {assets/thumbs-down-alt}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Text" id="445" x="150" y="620" width="889" height="23" text="5 - Você prefere estudar com livros e questionários em papel, computador, tablet ou celular?" measuredWidth="889" measuredHeight="23">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="449" x="150" y="850" measuredWidth="250" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="250" height="40" text="Enviar Respostas e Retornar {assets/long-arrow-left}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="450" x="150" y="655" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Papel {new}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="451" x="280" y="655" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Computador {computer}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="452" x="410" y="655" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Tablet {assets/tablet}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="453" x="130" y="820" height="8" measuredWidth="940" measuredHeight="8">
+    <screen xsi:type="model:Screen" href="assets/separator.screen#/"/>
+    <overrides>
+      <widgets ref="4" x="683" y="735" width="940"/>
+      <widgets ref="1" width="940"/>
+      <widgets ref="2" width="940">
+        <attributes key="foreground" value="#eeeeee"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="454" x="540" y="555" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Odeio {assets/thumbs-down-alt} {assets/thumbs-down-alt}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="455" x="540" y="655" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Celular {assets/mobile-phone}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="456" x="540" y="455" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Outro {cloud}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Text" id="457" x="150" y="720" width="889" height="23" text="4 - Você gosta de usar o Leitoor ?" measuredWidth="889" measuredHeight="23">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="458" x="150" y="755" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Muito {assets/thumbs-up-alt} {assets/thumbs-up-alt}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="459" x="280" y="755" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Gosto {assets/thumbs-up-alt}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="460" x="410" y="755" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Não gosto {assets/thumbs-down-alt}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="461" x="540" y="755" measuredWidth="115" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="115" height="40" text="Odeio {assets/thumbs-down-alt} {assets/thumbs-down-alt}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

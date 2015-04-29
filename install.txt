@@ -1,0 +1,50 @@
++---------------------------+
+|	Plano de instalação		|
++---------------------------+
+#. Banco de dados
+	Criar banco de dados
+		sudo -u postgres psql -c "CREATE DATABASE leitoor WITH ENCODING 'UTF8'";
+		
+#. Aplicação
+
+	Instalar Servidor [ver documento configuração ambiente]
+	
+	Parar serviço
+		service leitoor stop
+	
+	Baixar aplicação
+		cd /usr/apps/leitoor/
+		wget "http://nexus.delogic.com.br/service/local/artifact/maven/content?r=private-snapshots&g=br.com.delogic&a=leitoor&v=LATEST&p=war" --content-disposition --user=celio --password=* -O leitoor.war
+		
+	Descompatar para o servidor
+		unzip leitoor.war -d app
+		
+	Reiniciar Servidor
+		service leitoor start & tail -f log_leitoor.log
+
+# - Configurar S3 bucket
+	Criar o bucket no S3 com o nome leitoor
+	
+	Aplicar regra para servir as fontes corretamente:
+		Selecionar o bucket leitoor com o mouse-direito -> propriedades
+		Selecionar o item permissions e clicar em Edit Cors Configuration
+		Incluir o arquivo:
+			<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+				<CORSRule>
+					<AllowedOrigin>*</AllowedOrigin>
+					<AllowedMethod>GET</AllowedMethod>
+					<MaxAgeSeconds>3600</MaxAgeSeconds>
+				</CORSRule>
+			</CORSConfiguration>
+
+
++-----------------------------------+
+|	Processo dump Banco de Dados	|
++-----------------------------------+
+#. Dump do banco de dados
+sudo -u postgres pg_dump eguias > eguias.sql
+
+#. Restaurar banco de dados
+sudo -u postgres psql -c "DROP DATABASE IF EXISTS leitoor_mvp";
+sudo -u postgres psql -c "CREATE DATABASE leitoor_mvp WITH ENCODING 'UTF8'";
+sudo -u postgres  pg_dump leitoor | sudo -u postgres psql leitoor_mvp

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ctx="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+    <!-- UPLOAD ARQUIVOS ================================================================================== -->
+    <ctx:component-scan
+        base-package="br.com.delogic.leitoor.controller,
+                      br.com.delogic.csa.controller" />
+
+    <ctx:annotation-config />
+
+    <bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+        p:maxUploadSize="50000000" />
+
+    <!-- CONVERSÃO DE DADOS PARA CONTROLLER =============================================================== -->
+    <mvc:annotation-driven conversion-service="conversionService" />
+
+    <bean id="conversionService"
+        class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <list>
+            </list>
+        </property>
+    </bean>
+
+    <!-- GERENCIADOR DE VIEWS ============================================================================== -->
+    <bean
+        class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="mediaTypes">
+            <map>
+                <entry key="html" value="text/html" />
+                <entry key="json" value="application/json" />
+            </map>
+        </property>
+        <property name="viewResolvers">
+            <list>
+                <bean
+                    class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+                    p:exposeContextBeansAsAttributes="true">
+                    <property name="viewClass"
+                        value="org.springframework.web.servlet.view.JstlView" />
+                    <property name="prefix" value="/WEB-INF/pages/" />
+                    <property name="suffix" value=".jsp" />
+                </bean>
+            </list>
+        </property>
+
+        <!-- AUTO COMPLETAR JQUERY- JACKSON -->
+        <property name="defaultViews">
+            <list>
+                <bean
+                    class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" />
+            </list>
+
+        </property>
+    </bean>
+
+    <!-- TRATAR REQUESTS DE RECURSOS COM O SERVLET PADRÃO ================================================= -->
+    <mvc:default-servlet-handler />
+
+    <bean id="urlCadastro" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/" />
+
+    <bean id="urlHomePublico" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/home" />
+
+    <bean id="urlRecuperarSenha" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/recuperarsenha" />
+
+    <bean id="urlLogin" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/login" />
+
+    <bean id="urlLoginAutenticarCadastro" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/login/autenticarcadastro" />
+
+    <bean id="urlHomeProfessor" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/professor/home" />
+
+    <bean id="urlHomeAluno" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/aluno" />
+
+    <bean id="urlCriarAtividadeMaterial" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/professor/atividade/criar-material" />
+
+    <bean id="urlConfigurarAtividadeMaterial" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/professor/atividade/configurar-material" />
+
+    <bean id="urlAtividadeAlunos" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/professor/atividade/alunos" />
+
+    <bean id="urlLerTarefaEnviada" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/aluno/tarefa/{idTarefaEnviada}" />
+
+    <bean id="urlLogout" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/logout" />
+
+    <bean id="urlLoginFacebook" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/login/facebook" />
+
+    <bean id="urlLoginGoogle" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/login/google" />
+
+    <bean id="urlConvidarProfessor" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/professor/convidar" />
+
+    <bean id="urlAcompanhamento" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/professor/acompanhamento" />
+
+    <bean id="urlAvaliacaoQuestionario" class="br.com.delogic.leitoor.util.csa.UrlMapping"
+        p:path="/professor/acompanhamento/avaliacao" />
+
+
+</beans>

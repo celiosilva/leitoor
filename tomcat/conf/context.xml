@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+			  
+	<Resource
+	   auth="Container"
+	   driverClassName="org.postgresql.Driver"
+	   factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+	   fairQueue="true"
+	   initialSize="5"
+	   jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+	   jmxEnabled="true"
+	   logAbandoned="true"
+	   maxActive="50"
+	   maxIdle="25"
+	   maxWait="10000"
+	   minEvictableIdleTimeMillis="60000"
+	   minIdle="10"
+	   name="leitoords"
+	   removeAbandoned="true"
+	   removeAbandonedTimeout="60"
+	   testOnBorrow="true"
+	   testOnReturn="false"
+	   testWhileIdle="false"
+	   timeBetweenEvictionRunsMillis="60000"
+	   type="javax.sql.DataSource"
+	   url="${JDBC_CONNECTION_STRING}"
+	   useEquals="false"/>
+			
+</Context>

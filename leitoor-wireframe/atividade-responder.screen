@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="406" height="1500" measuredWidth="1200" measuredHeight="1500">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="15" height="1500"/>
+      <widgets ref="11" height="1500"/>
+      <widgets ref="11/28" height="1500"/>
+      <widgets ref="11/15" height="1500"/>
+      <widgets ref="11/16" height="1500"/>
+      <widgets ref="11/17" height="1500"/>
+      <widgets ref="11/18" height="1500"/>
+      <widgets ref="11/19" height="1500"/>
+      <widgets ref="11/20" height="1500"/>
+      <widgets ref="11/21" height="1500"/>
+      <widgets ref="11/22" height="1500"/>
+      <widgets ref="11/23" height="1500"/>
+      <widgets ref="11/24" height="1500"/>
+      <widgets ref="11/25" height="1500"/>
+      <widgets ref="11/26" height="1500"/>
+      <widgets ref="11/27" height="1500"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="120" x="130" y="140" width="272" measuredWidth="0" measuredHeight="0"/>
+  <widgets xsi:type="model:Shape" id="407" y="50" width="1200" height="50" measuredWidth="1200" measuredHeight="50" background="#a9c638" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="408" x="130" y="57" text="Leitura Bimestral - João e Maria" measuredWidth="279" measuredHeight="36" foreground="#ffffff">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="411" x="840" y="57" width="230" height="36" text="Enviar Respostas e Avançar {assets/long-arrow-right}" measuredWidth="230" measuredHeight="36" border="false" shapeType="rectangle-rounded">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="413" x="130" y="100" width="940" height="845" measuredWidth="940" measuredHeight="845" src="assets/atividade-ler_imagem.png"/>
+  <widgets xsi:type="model:Shape" id="414" x="680" y="57" width="153" height="36" text="Salvar Respostas {check}" measuredWidth="153" measuredHeight="36" border="false" shapeType="rectangle-rounded">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="416" measuredWidth="1200" measuredHeight="1080">
+    <screen xsi:type="model:Screen" href="../eguias-wireframe/assets/admin/modal-grande.screen#/"/>
+    <overrides>
+      <widgets ref="1" x="110" y="4" width="1200"/>
+      <widgets ref="2" x="240" y="50"/>
+      <widgets ref="3" width="940" height="739"/>
+      <widgets ref="4" width="940"/>
+      <widgets ref="5" x="907" link="atividade-avançar.screen"/>
+      <widgets ref="6" y="670" width="940"/>
+      <widgets ref="7" y="690" link="atividade-avançar.screen"/>
+      <widgets ref="7/69" width="123" text="Salvar e Fechar {check}"/>
+      <widgets ref="9" text="Atividade B1 - 6º B - Questionário Pág. 287"/>
+      <widgets ref="2">
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Label" x="385" y="84" width="295" text="Responda escrevendo no campo abaixo">
+            <font size="15px"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Checkbox" x="45" y="590" text="Foi vista saindo de uma loja já com um novo gato" selected="true">
+            <font/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Checkbox" x="45" y="560" text="Estava na escola onde tudo começou" selected="true">
+            <font/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Checkbox" x="45" y="530" text="Dormindo na casa do amante">
+            <font/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Label" x="518" y="482" width="295" text="Escolha uma ou mais alternativas">
+            <font size="15px"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:RadioButton" x="45" y="390" text="Conseguiu desviar como Neo do Matrix">
+            <font/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:RadioButton" x="45" y="360" text="Sim, a polícia suspeita que seja assassinato" selected="true">
+            <font/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:RadioButton" x="45" y="330" text="Ficou gravemente ferido mas foi socorrido e levado ao hospital">
+            <font/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Label" x="302" y="282" width="295" text="Escolha apenas uma das alternativas">
+            <font size="15px"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Link" x="310" y="691" text="{assets/long-arrow-left} Voltar">
+            <font size="15px"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:WidgetGroup" x="46" y="119" width="876">
+            <widgets xsi:type="model:Master" width="876">
+              <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Area"/>
+              <overrides>
+                <widgets ref="16" width="876" height="146" text="José Marco Feliciano"/>
+              </overrides>
+            </widgets>
+            <widgets xsi:type="model:Master" x="833" y="2" layoutParams="anchor-right|anchor-top,anchor-bottom">
+              <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+              <overrides>
+                <widgets ref="64" width="41" height="142" text="999">
+                  <attributes key="background" value="#cccccc"/>
+                  <attributes key="shapeType" value="rectangle"/>
+                </widgets>
+              </overrides>
+            </widgets>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Label" x="15" y="478" width="907" text="3 - Onde estava dona Chica nesse momento ? *5 Pontos*">
+            <font size="20px" underline="false"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Label" x="15" y="278" width="907" text="2 - E o gato morreu ? *2 Pontos*">
+            <font size="20px" underline="false"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Label" x="15" y="80" width="907" text="1 - Quem atirou o pau no gato ? *1 Ponto*">
+            <font size="20px" underline="false"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Insert" newIndex="7">
+          <object xsi:type="model:Shape" x="158" y="690" width="137" height="30" text="Enviar Respostas {assets/long-arrow-right}" background="#5cb85c" border="false" link="atividade-ler.screen" shapeType="rectangle-rounded">
+            <font bold="true"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Delete" ref="8"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="97" height="1200" measuredWidth="1200" measuredHeight="1200">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="16" height="49"/>
+      <widgets ref="11" height="1200"/>
+      <widgets ref="12" height="49"/>
+      <widgets ref="12/1" height="49"/>
+      <widgets ref="12/4" y="4"/>
+      <widgets ref="12/8" height="49"/>
+      <widgets ref="12/9" height="49"/>
+      <widgets ref="12/10" height="49"/>
+      <widgets ref="12/11" height="49"/>
+      <widgets ref="12/12" height="49"/>
+      <widgets ref="12/13" height="49"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="173" x="130" y="140" height="463" measuredWidth="461" measuredHeight="463">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgets ref="1" x="-86" y="-154" width="461" height="463"/>
+      <widgets ref="2" x="-86" y="-154" width="461"/>
+      <widgets ref="4" x="254" y="-154" link="home-oque-e.screen"/>
+      <widgets ref="5" x="-86" y="-154"/>
+      <widgets ref="9" x="72" y="-147" link="criar-atividade-materia-enviar.screen"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="174" x="610" y="140" measuredWidth="461" measuredHeight="463">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgets ref="1" x="-86" y="-84" width="461" height="463"/>
+      <widgets ref="2" x="-86" y="-84" width="461"/>
+      <widgets ref="4" x="254" y="-84" link="home-oque-e.screen"/>
+      <widgets ref="5" x="-86" y="-84" width="217" text="ACOMPANHAMENTO"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="211" x="150" y="210" measuredWidth="119" measuredHeight="165">
+    <widgets xsi:type="model:Shape" id="196" y="135" width="119" height="30" text="Aplicar  | {assets/caret-down}" measuredWidth="119" measuredHeight="30" background="#3d85c6" border="false" link="criar-atividade-informar-alunos.screen" shapeType="rectangle-rounded">
+      <font size="15px" bold="true"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="210" width="119" measuredWidth="119" measuredHeight="129">
+      <widgets xsi:type="model:Shape" id="208" width="119" height="129" text="João e Maria, \n30p, 10Q." measuredWidth="119" measuredHeight="129" background="#f3f3f3" border="false" shapeType="rectangle">
+        <font size="15px"/>
+      </widgets>
+      <widgets xsi:type="model:Shape" id="209" x="81" width="38" height="41" measuredWidth="38" measuredHeight="41" layoutParams="anchor-right|anchor-top" border="false" rotation="180" shapeType="triangle-right">
+        <font/>
+      </widgets>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="212" x="300" y="210" measuredWidth="119" measuredHeight="165">
+    <widgets xsi:type="model:Shape" id="213" y="135" width="119" height="30" text="Aplicar  | {assets/caret-down}" measuredWidth="119" measuredHeight="30" background="#3d85c6" border="false" shapeType="rectangle-rounded">
+      <font size="15px" bold="true"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="214" width="119" measuredWidth="119" measuredHeight="129">
+      <widgets xsi:type="model:Shape" id="215" width="119" height="129" text="João e Maria, \n30p, 10Q." measuredWidth="119" measuredHeight="129" background="#f3f3f3" border="false" shapeType="rectangle">
+        <font size="15px"/>
+      </widgets>
+      <widgets xsi:type="model:Shape" id="216" x="81" width="38" height="41" measuredWidth="38" measuredHeight="41" layoutParams="anchor-right|anchor-top" border="false" rotation="180" shapeType="triangle-right">
+        <font/>
+      </widgets>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="217" x="450" y="210" measuredWidth="119" measuredHeight="165">
+    <widgets xsi:type="model:Shape" id="218" y="135" width="119" height="30" text="Aplicar  | {assets/caret-down}" measuredWidth="119" measuredHeight="30" background="#3d85c6" border="false" shapeType="rectangle-rounded">
+      <font size="15px" bold="true"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="219" width="119" measuredWidth="119" measuredHeight="129">
+      <widgets xsi:type="model:Shape" id="220" width="119" height="129" text="João e Maria, \n30p, 10Q." measuredWidth="119" measuredHeight="129" background="#f3f3f3" border="false" shapeType="rectangle">
+        <font size="15px"/>
+      </widgets>
+      <widgets xsi:type="model:Shape" id="221" x="81" width="38" height="41" measuredWidth="38" measuredHeight="41" layoutParams="anchor-right|anchor-top" border="false" rotation="180" shapeType="triangle-right">
+        <font/>
+      </widgets>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="227" x="150" y="400" measuredWidth="119" measuredHeight="165">
+    <widgets xsi:type="model:Shape" id="228" y="135" width="119" height="30" text="Aplicar  | {assets/caret-down}" measuredWidth="119" measuredHeight="30" background="#3d85c6" border="false" shapeType="rectangle-rounded">
+      <font size="15px" bold="true"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="229" width="119" measuredWidth="119" measuredHeight="129">
+      <widgets xsi:type="model:Shape" id="230" width="119" height="129" text="João e Maria, \n30p, 10Q." measuredWidth="119" measuredHeight="129" background="#f3f3f3" border="false" shapeType="rectangle">
+        <font size="15px"/>
+      </widgets>
+      <widgets xsi:type="model:Shape" id="231" x="81" width="38" height="41" measuredWidth="38" measuredHeight="41" layoutParams="anchor-right|anchor-top" border="false" rotation="180" shapeType="triangle-right">
+        <font/>
+      </widgets>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="238" x="630" y="210" width="120" height="120" text="João e Maria\n6ª B\n38%" measuredWidth="120" measuredHeight="120" background="#5bc0de" border="false" link="acompanhamento.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="239" x="780" y="210" width="120" height="120" text="Os Lusíadas\n6ª C\n95%" measuredWidth="120" measuredHeight="120" background="#5cb85c" border="false" link="acompanhamento.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="240" x="930" y="210" width="120" height="120" text="Aventureiros\n6ª C\n5%" measuredWidth="120" measuredHeight="120" background="#f1c232" border="false" link="acompanhamento.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="241" x="630" y="414" width="120" height="120" text="Questionário A1\nVários\n2%" measuredWidth="120" measuredHeight="120" background="#e06666" border="false" link="acompanhamento.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="242" x="780" y="414" width="120" height="120" text="QuestionárioA\n7º B\nFinalizado" measuredWidth="120" measuredHeight="120" background="#cccccc" border="false" link="acompanhamento.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="243" x="630" y="338" width="120" height="30" text="Detalhar {bar-chart}" measuredWidth="120" measuredHeight="30" background="#5bc0de" border="false" link="acompanhamento.screen" shapeType="rectangle-rounded">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="244" x="780" y="338" width="120" height="30" text="Detalhar {bar-chart}" measuredWidth="120" measuredHeight="30" background="#5cb85c" border="false" link="acompanhamento.screen" shapeType="rectangle-rounded">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="245" x="930" y="338" width="120" height="30" text="Detalhar {bar-chart}" measuredWidth="120" measuredHeight="30" background="#f1c232" border="false" link="acompanhamento.screen" shapeType="rectangle-rounded">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="246" x="630" y="546" width="120" height="30" text="Detalhar {bar-chart}" measuredWidth="120" measuredHeight="30" background="#e06666" border="false" link="acompanhamento.screen" shapeType="rectangle-rounded">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="247" x="780" y="546" width="120" height="30" text="Detalhar {bar-chart}" measuredWidth="120" measuredHeight="30" background="#cccccc" border="false" link="acompanhamento.screen" shapeType="rectangle-rounded">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="248" x="130" y="68" measuredWidth="437" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Home %(font:-3)%(color:gray)// Controle de Atividades%%"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

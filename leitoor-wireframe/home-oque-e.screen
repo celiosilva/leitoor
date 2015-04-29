@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="97" height="1200" measuredWidth="1200" measuredHeight="1200">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="16" height="49"/>
+      <widgets ref="11" height="1200"/>
+      <widgets ref="12" height="49"/>
+      <widgets ref="12/1" height="49"/>
+      <widgets ref="12/4" y="4"/>
+      <widgets ref="12/8" height="49"/>
+      <widgets ref="12/9" height="49"/>
+      <widgets ref="12/10" height="49"/>
+      <widgets ref="12/11" height="49"/>
+      <widgets ref="12/12" height="49"/>
+      <widgets ref="12/13" height="49"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="186" x="130" y="220" measuredWidth="461" measuredHeight="305">
+    <widgets xsi:type="model:Master" id="173" width="461" measuredWidth="461" measuredHeight="305">
+      <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+      <overrides>
+        <widgetChanges xsi:type="o:Insert" newIndex="5">
+          <object xsi:type="model:Shape" x="254" y="-84" width="121" height="50" text="O que é ?" layoutParams="anchor-left|anchor-top" border="false" shapeType="rectangle">
+            <font size="20px"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Delete" ref="4"/>
+        <widgets ref="1" x="-86" y="-84" width="461"/>
+        <widgets ref="2" x="-86" y="-84" width="461"/>
+        <widgets ref="5" x="-86" y="-84" link="home-completa.screen">
+          <attributes key="background" value="#999999"/>
+        </widgets>
+        <widgets ref="9" x="72" y="-77" link="criar-atividade-materia-enviar.screen"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="180" x="19" y="72" width="100" height="105" measuredWidth="100" measuredHeight="105">
+      <screen xsi:type="model:Screen" href="assets/icone-atividades.screen#/"/>
+      <overrides>
+        <widgets ref="1" x="-16" y="-60" width="100" height="105"/>
+        <widgets ref="2" width="100" height="105"/>
+        <widgets ref="3" x="22" y="28" width="27" height="65"/>
+        <widgets ref="4" x="50" y="45" width="28" height="34"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Text" id="182" x="140" y="69" width="300" height="200" text="São conjuntos de tarefas como leituras e/ou questionários, previamente preparados pelo professor, que poderão ser aplicados a um aluno ou turmas de alunos quando desejar. As atividades ajudam o professor a preparar o conteúdo uma única vez e replicar quantas vezes quiser. Se ainda não possui atividade clique em Criar Atividade para começar!" measuredWidth="300" measuredHeight="200">
+      <font size="15px"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="187" x="610" y="220" measuredWidth="461" measuredHeight="305">
+    <widgets xsi:type="model:Master" id="174" measuredWidth="461" measuredHeight="305">
+      <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+      <overrides>
+        <widgetChanges xsi:type="o:Insert" newIndex="5">
+          <object xsi:type="model:Shape" x="254" y="-84" width="121" height="50" text="O que é ?" layoutParams="anchor-left|anchor-top" border="false" shapeType="rectangle">
+            <font size="20px"/>
+          </object>
+        </widgetChanges>
+        <widgetChanges xsi:type="o:Delete" ref="9"/>
+        <widgetChanges xsi:type="o:Delete" ref="4"/>
+        <widgets ref="1" x="-86" y="-84" width="461"/>
+        <widgets ref="2" x="-86" y="-84" width="461"/>
+        <widgets ref="5" x="-86" y="-84" width="217" text="ACOMPANHAMENTO" link="home-completa.screen">
+          <attributes key="background" value="#999999"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Icon" id="183" x="16" y="72" width="105" height="105" measuredWidth="105" measuredHeight="105" foreground="#6aa84f" icon="line-chart (large)"/>
+    <widgets xsi:type="model:Text" id="184" x="144" y="69" width="300" height="200" text="São atividades que foram aplicadas e agora estão sendo executadas pelos alunos. O acompanhamento provê ao professor métricas e indicadores do trabalho do aluno e também permite analisar e avaliar as respostas que foram criadas. Aplique uma atividade para poder acompanha-la por aqui." measuredWidth="300" measuredHeight="200">
+      <font size="15px"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Master" id="189" x="130" y="148" measuredWidth="437" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Home %(font:-3)%(color:gray)// Controle de Atividades%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="190" x="130" y="70" width="940" height="67" text="Olá Célio,  essa será sua tela inicial onde poderá iniciar qualquer tipo de atividade ou acompanhamento,\nfalar com alunos, etc. Se é sua primeira vez inicie criando uma atividade." measuredWidth="940" measuredHeight="67" background="#a9c638" border="false" link="home-completa.screen" textAlignment="Left" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="191" x="1032" y="88" text="{assets/remove}" measuredWidth="30" measuredHeight="32" foreground="#ffffff" link="home-completa.screen">
+    <font size="20px" bold="false"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="406" height="1500" measuredWidth="1200" measuredHeight="1500">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="15" height="1500"/>
+      <widgets ref="11" height="1500"/>
+      <widgets ref="11/28" height="1500"/>
+      <widgets ref="11/15" height="1500"/>
+      <widgets ref="11/16" height="1500"/>
+      <widgets ref="11/17" height="1500"/>
+      <widgets ref="11/18" height="1500"/>
+      <widgets ref="11/19" height="1500"/>
+      <widgets ref="11/20" height="1500"/>
+      <widgets ref="11/21" height="1500"/>
+      <widgets ref="11/22" height="1500"/>
+      <widgets ref="11/23" height="1500"/>
+      <widgets ref="11/24" height="1500"/>
+      <widgets ref="11/25" height="1500"/>
+      <widgets ref="11/26" height="1500"/>
+      <widgets ref="11/27" height="1500"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="119" y="50" measuredWidth="1200" measuredHeight="80">
+    <screen xsi:type="model:Screen" href="assets/wizard.screen#/"/>
+    <overrides>
+      <widgets ref="1">
+        <attributes key="background" value="#eeeeee"/>
+      </widgets>
+      <widgets ref="7">
+        <attributes key="foreground" value="#eeeeee"/>
+      </widgets>
+      <widgets ref="14">
+        <attributes key="foreground" value="#000000"/>
+      </widgets>
+      <widgets ref="13">
+        <attributes key="background" value="#000000"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="291" x="130" y="230" height="1270" measuredWidth="940" measuredHeight="1270">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgetChanges xsi:type="o:Delete" ref="4"/>
+      <widgets ref="1" x="-86" y="-84" width="940" height="1270"/>
+      <widgets ref="2" x="-86" y="-84" width="940"/>
+      <widgets ref="5" x="-86" y="-84" width="303" text="CONFIGURAÇÕES POR PÁGINA"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="120" x="130" y="140" width="272" measuredWidth="0" measuredHeight="0"/>
+  <widgets xsi:type="model:Master" id="272" x="295" y="1440" measuredWidth="176" measuredHeight="40" link="criar-atividade-informar-alunos.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="176" height="40" text="Salvar e Continuar {assets/long-arrow-right}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Link" id="273" x="486" y="1446" text="{assets/long-arrow-left} Voltar" measuredWidth="63" measuredHeight="28" link="criar-atividade-config-geral.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="333" x="160" y="1440" measuredWidth="121" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="121" height="40" text="Salvar {check}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="334" x="144" y="300" width="913" height="50" measuredWidth="913" measuredHeight="50" background="#eeeeee" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="335" x="144" y="300" width="50" height="50" text="{submenu}" measuredWidth="50" measuredHeight="50" background="#cccccc" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="336" x="206" y="307" text="Página 1" measuredWidth="81" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="338" x="592" y="314" measuredWidth="104" measuredHeight="22">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="104" height="22" text="Tempo Mínimo">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="342" x="144" y="370" width="913" height="50" measuredWidth="913" measuredHeight="50" background="#eeeeee" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="343" x="144" y="370" width="50" height="50" text="{submenu}" measuredWidth="50" measuredHeight="50" background="#cccccc" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="344" x="206" y="377" text="Página 2" measuredWidth="81" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="348" x="592" y="384" measuredWidth="104" measuredHeight="22">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="104" height="22" text="Tempo Mínimo">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="350" x="144" y="440" width="913" height="201" measuredWidth="913" measuredHeight="201" background="#eeeeee" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="351" x="144" y="440" width="50" height="50" text="{submenu}" measuredWidth="50" measuredHeight="50" background="#cccccc" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="352" x="206" y="447" text="Página 3" measuredWidth="81" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="353" x="704" y="445" measuredWidth="124" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="354" width="124" measuredWidth="124" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="124" text="5">
+          <attributes key="borderColor" value="#ffffff"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="355" x="45" measuredWidth="79" measuredHeight="40" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="79" height="40" text="Minutos">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Master" id="356" x="592" y="454" measuredWidth="104" measuredHeight="22">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="104" height="22" text="Tempo Mínimo">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="385" x="704" y="305" measuredWidth="124" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="386" width="124" measuredWidth="124" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="124" text="5">
+          <attributes key="borderColor" value="#ffffff"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="387" x="45" measuredWidth="79" measuredHeight="40" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="79" height="40" text="Minutos">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="388" x="704" y="375" measuredWidth="124" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="389" width="124" measuredWidth="124" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="124" text="5">
+          <attributes key="borderColor" value="#ffffff"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="390" x="45" measuredWidth="79" measuredHeight="40" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="79" height="40" text="Minutos">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="391" x="144" y="656" width="913" height="769" measuredWidth="913" measuredHeight="769" background="#eeeeee" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="392" x="144" y="656" width="50" height="50" text="{line-arrow-down}" measuredWidth="50" measuredHeight="50" background="#cccccc" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="393" x="206" y="663" text="Página 4" measuredWidth="81" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="394" x="592" y="670" measuredWidth="104" measuredHeight="22">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="104" height="22" text="Tempo Mínimo">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="396" x="704" y="661" measuredWidth="124" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="397" width="124" measuredWidth="124" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="124" text="5">
+          <attributes key="borderColor" value="#ffffff"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="398" x="45" measuredWidth="79" measuredHeight="40" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="79" height="40" text="Minutos">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Image" id="405" x="144" y="707" width="913" height="352" measuredWidth="913" measuredHeight="352" src="assets/criar-atividade-config-por-pagina_image.png"/>
+  <widgets xsi:type="model:Master" id="407" x="129" y="152" measuredWidth="762" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Atividade %(font:-3)%(color:gray)// Informe como a atividade deve ser aplicada%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="437" x="160" y="1080" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Questão Dissertativa&#xD;&#xA;%(font:-2)%(color:555)Descrição da Questão%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="442" x="845" y="663" measuredWidth="200" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="200" height="35" text="Adicionar Questão {assets/caret-down}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="443" x="160" y="1140" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Questão Objetiva&#xD;&#xA;%(font:-2)%(color:555)Descrição da Questão%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="448" x="160" y="500" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Questão Dissertativa&#xD;&#xA;%(font:-2)%(color:555)Descrição da Questão%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="449" x="160" y="1200" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Alternativa&#xD;&#xA;%(font:-2)%(color:555)Marque apenas as corretas%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="450" x="320" y="1200" width="725" measuredWidth="725" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="451" width="725" measuredWidth="725" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="725" text="                 A 15º sudoeste do rio Amazonas"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="452" x="684" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="{add}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="453" x="646" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="500">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="472" x="2" y="2" width="71" measuredWidth="71" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="71" height="36" text="Correta {assets/check}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="474" x="320" y="1250" measuredWidth="725" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="475" width="725" measuredWidth="725" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="725" text="                 Perto do Amapá"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="476" x="684" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="{minus}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="477" x="646" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="500">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="478" x="2" y="2" width="71" measuredWidth="71" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="71" height="36" text="Correta {unchecked}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="480" x="320" y="1300" measuredWidth="725" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="481" width="725" measuredWidth="725" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="725" text="                 Na Praia do Sabugo"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="482" x="684" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="{minus}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="483" x="646" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="500">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="484" x="2" y="2" width="71" measuredWidth="71" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="71" height="36" text="Correta {unchecked}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Master" id="488" x="845" y="447" measuredWidth="200" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="200" height="35" text="Adicionar Questão {assets/caret-down}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="489" x="845" y="377" measuredWidth="200" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="200" height="35" text="Adicionar Questão {assets/caret-down}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="490" x="845" y="307" measuredWidth="200" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="200" height="35" text="Adicionar Questão {assets/caret-down}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="491" x="845" y="342" measuredWidth="200" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="200" height="35" text="Questão Objetiva {hand-cursor}">
+        <attributes key="background" value="#ffffff"/>
+        <attributes key="foreground" value="#ffffff"/>
+        <attributes key="border" value="solid"/>
+        <attributes key="textAlignment" value="Right"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="492" x="845" y="376" measuredWidth="200" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="200" height="35" text="Questão Dissertativa {edit}">
+        <attributes key="background" value="#ffffff"/>
+        <attributes key="foreground" value="#ffffff"/>
+        <attributes key="border" value="solid"/>
+        <attributes key="textAlignment" value="Right"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="493" x="160" y="1250" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Alternativa&#xD;&#xA;%(font:-2)%(color:555)Marque apenas as corretas%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="494" x="160" y="1300" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Alternativa&#xD;&#xA;%(font:-2)%(color:555)Marque apenas as corretas%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="495" x="845" y="698" measuredWidth="200" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="200" height="35" text="Questão Objetiva {hand-cursor}">
+        <attributes key="background" value="#ffffff"/>
+        <attributes key="foreground" value="#ffffff"/>
+        <attributes key="border" value="solid"/>
+        <attributes key="textAlignment" value="Right"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="496" x="845" y="732" measuredWidth="200" measuredHeight="35">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="200" height="35" text="Questão Dissertativa {edit}">
+        <attributes key="background" value="#ffffff"/>
+        <attributes key="foreground" value="#ffffff"/>
+        <attributes key="border" value="solid"/>
+        <attributes key="textAlignment" value="Right"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="503" x="320" y="500" measuredWidth="725" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="504" width="725" measuredWidth="725" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="725" text="1                        Como se dá a localização de chapéuzinho no momento que atravessa a floresta ?"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="505" x="684" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="{minus}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="506" x="646" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="500">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="507" x="40" y="2" width="49" measuredWidth="49" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" height="36" text="Ponto(s)">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="508" x="320" y="1080" measuredWidth="725" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="509" width="725" measuredWidth="725" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="725" text="1                        Como se dá a localização de chapéuzinho no momento que atravessa a floresta ?"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="510" x="684" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="{minus}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="511" x="646" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="500">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="512" x="40" y="2" width="49" measuredWidth="49" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" height="36" text="Ponto(s)">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="513" x="320" y="1140" measuredWidth="725" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="514" width="725" measuredWidth="725" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="725" text="1                        Como se dá a localização de chapéuzinho no momento que atravessa a floresta ?"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="515" x="684" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="{minus}">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="516" x="646" y="2" measuredWidth="39" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="39" height="36" text="500">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="517" x="40" y="2" width="49" measuredWidth="49" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" height="36" text="Ponto(s)">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

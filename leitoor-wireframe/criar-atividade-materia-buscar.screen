@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="97" measuredWidth="1200" measuredHeight="1200">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="12/10">
+        <attributes key="background" value="#000000"/>
+      </widgets>
+      <widgets ref="12/8">
+        <attributes key="background" value="#333333"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="119" y="50" measuredWidth="1200" measuredHeight="80">
+    <screen xsi:type="model:Screen" href="assets/wizard.screen#/"/>
+    <overrides>
+      <widgets ref="1">
+        <attributes key="background" value="#000000"/>
+      </widgets>
+      <widgets ref="7">
+        <attributes key="foreground" value="#000000"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="291" x="130" y="230" measuredWidth="940" measuredHeight="250">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgets ref="1" x="-86" y="-84" width="940" height="250"/>
+      <widgets ref="2" x="-86" y="-84" width="940"/>
+      <widgets ref="4" x="130" y="-84" width="342" text="MATERIAIS DISPONÍVEIS" link="criar-atividade-material-selecionar.screen"/>
+      <widgets ref="5" x="-86" y="-84" width="217" text="CRIAR MATERIAL"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="120" x="130" y="140" width="272" measuredWidth="0" measuredHeight="0"/>
+  <widgets xsi:type="model:Master" id="94" x="368" y="300" measuredWidth="176" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="176" height="40" text="Buscar Arquivo {upload}">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="259" x="160" y="355" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Título do Material&#xD;&#xA;%(font:-2)%(color:555)Nome do livro, texto, matéria, etc.%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="262" x="368" y="355" width="465" measuredWidth="465" measuredHeight="40">
+    <widgets xsi:type="model:Master" id="260" width="465" measuredWidth="465" measuredHeight="40">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Forms.screen#Text%20Input"/>
+      <overrides>
+        <widgets ref="1" width="465" text="Ex. Os Lusíadas, Atividades na floresta Amazônica"/>
+      </overrides>
+    </widgets>
+    <widgets xsi:type="model:Master" id="261" x="422" y="2" measuredWidth="41" measuredHeight="36" layoutParams="anchor-right|anchor-top,anchor-bottom">
+      <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Label"/>
+      <overrides>
+        <widgets ref="64" width="41" height="36" text="30">
+          <attributes key="background" value="#cccccc"/>
+          <attributes key="shapeType" value="rectangle"/>
+        </widgets>
+      </overrides>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="263" x="552" y="300" measuredWidth="48" measuredHeight="40">
+    <widgets xsi:type="model:Icon" id="266" height="40" measuredWidth="48" measuredHeight="40" icon="pdf (xlarge)"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="272" x="283" y="420" measuredWidth="176" measuredHeight="40" link="criar-atividade-config-geral.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="176" height="40" text="Salvar e Continuar {assets/long-arrow-right}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Link" id="273" x="470" y="426" text="Cancelar e Sair" measuredWidth="101" measuredHeight="28">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="326" x="160" y="300" measuredWidth="200" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="../eguias-wireframe/assets/Bootstrap/Typography.screen#Text%20Primary"/>
+    <overrides>
+      <widgets ref="26" width="200" height="40" text="Selecionar Arquivo&#xD;&#xA;%(font:-2)%(color:555)Apenas arquivos tipo PDF%%">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="327" x="129" y="152" measuredWidth="665" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Material %(font:-3)%(color:gray)// Crie ou escolha um material existente%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="335" width="1200" height="1200" measuredWidth="1200" measuredHeight="1200" background="#cccccc" alpha="218"/>
+  <widgets xsi:type="model:Master" id="330" x="152" y="420" measuredWidth="121" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="121" height="40" text="Salvar {check}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Image" id="332" x="120" y="72" measuredWidth="960" measuredHeight="530" src="assets/criar-atividade-materia-buscar_image.png"/>
+  <widgets xsi:type="model:Shape" id="333" x="824" y="556" width="141" height="28" text="Selecionar Arquivo" measuredWidth="141" measuredHeight="28" background="#eeeeee" foreground="#444444" link="criar-atividade-materia-enviar.screen" shapeType="rectangle-rounded">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="334" x="325" y="528" text="C:\arquivos\Os Lusíadas.pdf" measuredWidth="155" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="336" x="1024" y="72" width="46" height="25" text="X" measuredWidth="46" measuredHeight="25" background="#990000" border="false" link="criar-atividade-materia-enviar.screen" shapeType="rectangle">
+    <font bold="true"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

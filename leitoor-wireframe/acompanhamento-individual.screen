@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="97" height="1600" measuredWidth="1200" measuredHeight="1600">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="16" height="49"/>
+      <widgets ref="11" height="1600"/>
+      <widgets ref="12/1" height="49"/>
+      <widgets ref="12/4" y="4"/>
+      <widgets ref="12/8" height="49"/>
+      <widgets ref="12/9" height="49"/>
+      <widgets ref="12/10" height="49"/>
+      <widgets ref="12/11" height="49"/>
+      <widgets ref="12/12" height="49"/>
+      <widgets ref="12/13" height="49"/>
+      <widgets ref="15" height="1600"/>
+      <widgets ref="11/28" height="1600"/>
+      <widgets ref="11/15" height="1600"/>
+      <widgets ref="11/16" height="1600"/>
+      <widgets ref="11/17" height="1600"/>
+      <widgets ref="11/18" height="1600"/>
+      <widgets ref="11/19" height="1600"/>
+      <widgets ref="11/20" height="1600"/>
+      <widgets ref="11/21" height="1600"/>
+      <widgets ref="11/22" height="1600"/>
+      <widgets ref="11/23" height="1600"/>
+      <widgets ref="11/24" height="1600"/>
+      <widgets ref="11/25" height="1600"/>
+      <widgets ref="11/26" height="1600"/>
+      <widgets ref="11/27" height="1600"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="174" x="130" y="140" height="1429" measuredWidth="940" measuredHeight="1429">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgetChanges xsi:type="o:Delete" ref="4"/>
+      <widgets ref="1" x="-566" y="-153" width="940" height="1429"/>
+      <widgets ref="2" x="-566" y="-153" width="940"/>
+      <widgets ref="5" x="-566" y="-153" width="327" text="ATIVIDADE BI 1 - 6ª B"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="252" x="150" y="230" measuredWidth="202" measuredHeight="43">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%203"/>
+    <overrides>
+      <widgets ref="131" text="Os Lusíadas, 6ª B">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="332" x="150" y="200" text="Atividade" measuredWidth="90" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="333" x="392" y="200" text="Aluno" measuredWidth="58" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="335" x="392" y="230" measuredWidth="176" measuredHeight="43">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%203"/>
+    <overrides>
+      <widgets ref="131" text="Rafael da Silva">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="339" x="615" y="200" text="Início / Término" measuredWidth="143" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="340" x="615" y="230" measuredWidth="258" measuredHeight="43">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%203"/>
+    <overrides>
+      <widgets ref="131" text="10/10 até 20/10/2014">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="350" x="150" y="1090" width="913" measuredWidth="912" measuredHeight="409">
+    <widgets xsi:type="model:Shape" id="290" width="505" height="36" text="Atividade" measuredWidth="505" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="291" x="508" width="229" height="36" text="Data Realização" measuredWidth="229" measuredHeight="36" background="#cccccc" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="292" y="40" width="505" height="36" text="Página 1" measuredWidth="505" measuredHeight="36" background="#b4dbeb" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="293" x="508" y="40" width="229" height="36" text="10/10/2010 10:00h" measuredWidth="229" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="294" y="77" width="505" height="36" text="Página 2" measuredWidth="505" measuredHeight="36" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="316" y="114" width="505" height="36" text="Página 3" measuredWidth="505" measuredHeight="36" background="#b4dbeb" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="317" x="508" y="114" width="229" height="36" text="11/10/2010 10:00h" measuredWidth="229" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="318" y="151" width="505" height="36" text="Página 4" measuredWidth="505" measuredHeight="36" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="320" y="188" width="505" height="36" text="Página 5" measuredWidth="505" measuredHeight="36" background="#b4dbeb" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="321" x="508" y="188" width="229" height="36" text="10/10/2010 10:00h" measuredWidth="229" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="322" y="225" width="505" height="36" text="Página 7" measuredWidth="505" measuredHeight="36" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="324" y="262" width="505" height="36" text="Página 8" measuredWidth="505" measuredHeight="36" background="#b4dbeb" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="325" x="508" y="262" width="229" height="36" text="10/10/2010 ..." measuredWidth="229" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="326" y="299" width="505" height="36" text="Página 9" measuredWidth="505" measuredHeight="36" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="328" x="508" y="77" width="229" height="36" text="10/10/2010 10:00h" measuredWidth="229" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="329" x="508" y="151" width="229" height="36" text="11/10/2010 10:00h" measuredWidth="229" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="330" x="508" y="225" width="229" height="36" text="10/10/2010 10:00h" measuredWidth="229" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="331" x="508" y="299" width="229" height="36" text="-" measuredWidth="229" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="341" x="741" width="171" height="36" text="Situação" measuredWidth="171" measuredHeight="36" background="#cccccc" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="342" x="741" y="40" width="171" height="36" text="Realizado" measuredWidth="171" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="343" x="741" y="77" width="171" height="36" text="Realizado" measuredWidth="171" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="344" x="741" y="114" width="171" height="36" text="Realizado" measuredWidth="171" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="345" x="741" y="151" width="171" height="36" text="Realizado" measuredWidth="171" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="346" x="741" y="188" width="171" height="36" text="Realizado" measuredWidth="171" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="347" x="741" y="225" width="171" height="36" text="Realizado" measuredWidth="171" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="348" x="741" y="262" width="171" height="36" text="Em Andamento" measuredWidth="171" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="349" x="741" y="299" width="171" height="36" text="-" measuredWidth="171" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="363" y="336" width="505" height="36" text="Página ..." measuredWidth="505" measuredHeight="36" background="#b4dbeb" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="364" x="508" y="336" width="229" height="36" text="-" measuredWidth="229" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="365" y="373" width="505" height="36" text="Página 56" measuredWidth="505" measuredHeight="36" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="366" x="508" y="373" width="229" height="36" text="-" measuredWidth="229" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="367" x="741" y="336" width="171" height="36" text="-" measuredWidth="171" measuredHeight="36" background="#b4dbeb" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:Shape" id="368" x="741" y="373" width="171" height="36" text="-" measuredWidth="171" measuredHeight="36" background="#eeeeee" border="false" shapeType="rectangle">
+      <font size="20px"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Master" id="359" x="500" y="70" measuredWidth="334" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Detalhes da Atividade"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="360" x="130" y="70" width="110" measuredWidth="110" measuredHeight="56" link="home-completa.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" width="110" text="%(color:gray)%(font:-5)Home{assets/double-angle-right}%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="361" x="240" y="70" measuredWidth="253" measuredHeight="56" link="acompanhamento.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" width="253" text="%(color:gray)%(font:-5)Acompanhamento{assets/double-angle-right}%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Link" id="362" x="150" y="1520" text="{assets/long-arrow-left} Voltar" measuredWidth="63" measuredHeight="28" link="acompanhamento.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="369" x="700" y="300" measuredWidth="349" measuredHeight="366" src="assets/acompanhamento-individual_image.png"/>
+  <widgets xsi:type="model:Image" id="370" x="210" y="300" measuredWidth="344" measuredHeight="367" src="assets/acompanhamento-individual_image(1).png"/>
+  <widgets xsi:type="model:Image" id="373" x="170" y="700" measuredWidth="470" measuredHeight="280" src="assets/acompanhamento-individual_image(4).png"/>
+  <widgets xsi:type="model:WidgetGroup" id="378" x="668" y="704" measuredWidth="373" measuredHeight="293">
+    <widgets xsi:type="model:Image" id="371" y="24" measuredWidth="373" measuredHeight="269" src="assets/acompanhamento-individual_image(2).png"/>
+    <widgets xsi:type="model:Label" id="374" x="120" text="Questionário" measuredWidth="133" measuredHeight="38">
+      <font size="21px" bold="true"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="375" x="150" y="1040" width="913" height="50" measuredWidth="913" measuredHeight="50" background="#eeeeee" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="376" x="150" y="1040" width="50" height="50" text="{line-arrow-down}" measuredWidth="50" measuredHeight="50" background="#cccccc" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="377" x="212" y="1047" text="Detalhes de acesso do aluno" measuredWidth="253" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

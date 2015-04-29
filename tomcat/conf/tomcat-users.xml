@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tomcat-users>
+
+    <role rolename="probeuser" />
+    <role rolename="poweruser" />
+    <role rolename="poweruserplus" />
+    <role rolename="manager" />
+    <user username="${probe.usuario}" password="${probe.senha}" roles="manager" />
+	
+	<role rolename="arrendatario"/>
+	<user password="manager" roles="arrendatario" username="admin"/>
+
+</tomcat-users>

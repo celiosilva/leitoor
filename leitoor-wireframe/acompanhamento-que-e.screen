@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="97" measuredWidth="1200" measuredHeight="1200">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="16" height="49"/>
+      <widgets ref="11" height="1200"/>
+      <widgets ref="12" height="49"/>
+      <widgets ref="12/1" height="49"/>
+      <widgets ref="12/4" y="4"/>
+      <widgets ref="12/8" height="49"/>
+      <widgets ref="12/9" height="49"/>
+      <widgets ref="12/10" height="49"/>
+      <widgets ref="12/11" height="49"/>
+      <widgets ref="12/12" height="49"/>
+      <widgets ref="12/13" height="49"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="174" x="130" y="140" height="493" measuredWidth="940" measuredHeight="493">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgets ref="1" x="-566" y="-153" width="940" height="493"/>
+      <widgets ref="2" x="-566" y="-153" width="940"/>
+      <widgets ref="4" x="253" y="-153">
+        <attributes key="background" value="#ffffff"/>
+      </widgets>
+      <widgets ref="5" x="-566" y="-153" width="255" text="ATIVIDADE BI 1 - 6ª B" link="acompanhamento.screen">
+        <attributes key="background" value="#999999"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="185" x="248" y="70" measuredWidth="282" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Acompanhamento"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="286" x="130" y="70" measuredWidth="125" measuredHeight="56" link="home-completa.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="%(color:gray)%(font:-5)Home{assets/double-angle-right}%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Link" id="318" x="146" y="592" text="{assets/long-arrow-left} Voltar" measuredWidth="63" measuredHeight="28" link="acompanhamento.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="319" x="210" y="220" measuredWidth="378" measuredHeight="345">
+    <widgets xsi:type="model:Text" id="320" y="121" width="378" height="224" text="Acompanhamento é local onde o professor pode visualizar todo o trabalho executado pelo aluno, desde o início até a finalização, obtendo as respostas dos exercícios, fazer avaliação do conteúdo e planejar o andamento da sua aula." measuredWidth="378" measuredHeight="224" textAlignment="Center">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="321" x="110" width="159" measuredWidth="158" measuredHeight="97">
+      <widgets xsi:type="model:Icon" id="322" width="104" height="97" measuredWidth="104" measuredHeight="97" foreground="#5cb85c" icon="assets/list-ol (custom)"/>
+      <widgets xsi:type="model:Icon" id="323" x="95" y="15" width="63" height="65" measuredWidth="63" measuredHeight="65" foreground="#0000ff" icon="checked (custom)"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="324" x="620" y="230" measuredWidth="377" measuredHeight="337">
+    <widgets xsi:type="model:Text" id="325" y="109" width="377" height="228" text="Acompanhamento também permite ao professor coletar dados estatísticos sobre o trabalho do aluno, como velocidade, interação e engajamento e poder planejar melhor a sua aula com base na capacidade do aluno." measuredWidth="377" measuredHeight="228" textAlignment="Center">
+      <font size="20px"/>
+    </widgets>
+    <widgets xsi:type="model:WidgetGroup" id="326" x="112" width="149" measuredWidth="148" measuredHeight="81">
+      <widgets xsi:type="model:Icon" id="327" width="77" height="81" measuredWidth="77" measuredHeight="81" foreground="#444444" icon="line-chart (custom)"/>
+      <widgets xsi:type="model:Icon" id="328" x="76" y="4" width="72" height="73" measuredWidth="72" measuredHeight="73" foreground="#351c75" icon="find2 (large)"/>
+    </widgets>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

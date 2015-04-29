@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ctx="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+    xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                        http://www.springframework.org/schema/aop
+                        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+                        http://www.springframework.org/schema/data/jpa
+                        http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+                        http://www.springframework.org/schema/jdbc
+                        http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+    <!-- ====================================== -->
+    <!-- SCRIPTS PARA CRIAÇÃO DO BANCO DE DADOS -->
+    <!-- ====================================== -->
+    <!-- 1. EXECUTAR TODOS OS SCRIPTS QUE COMEÇAM COM V...sql =============================================== -->
+    <bean id="flyway" class="org.flywaydb.core.Flyway" init-method="migrate"
+        p:dataSource-ref="leitoords" p:locations="database"
+        p:outOfOrder="true" p:initOnMigrate="true" />
+
+    <!-- 2. COMPILAR FUNÇÕES E PROCEDURES =================================================================== -->
+    <jdbc:initialize-database data-source="leitoords">
+        <jdbc:script location="classpath:database/functions.sql"
+            encoding="UTF-8" separator="/**/" />
+    </jdbc:initialize-database>
+
+
+    <!-- ============================================ -->
+    <!-- SERVIÇOS CONFIGURADOS DE ACORDO COM AMBIENTE -->
+    <!-- ============================================ -->
+
+    <beans profile="PROD">
+
+        <!-- deverá ser preenchido antes de ir para produção -->
+        <bean id="awsCredentials" class="com.amazonaws.auth.BasicAWSCredentials">
+            <constructor-arg name="accessKey" value="?" />
+            <constructor-arg name="secretKey" value="?" />
+        </bean>
+
+        <bean name="autenticacaoService"
+            class="br.com.delogic.leitoor.service.impl.AutenticacaoServiceImpl" />
+
+        <!-- CONTENT MANAGER ================================================================================== -->
+        <bean id="contentManager" class="br.com.delogic.leitoor.util.csa.S3ContentManager">
+            <property name="bucket" value="leitoor-arquivos" />
+            <property name="endpoint" value="https://s3-sa-east-1.amazonaws.com" />
+            <property name="iterator">
+                <bean class="br.com.delogic.leitoor.util.csa.UUIDIterator" />
+            </property>
+            <property name="credentials" ref="awsCredentials" />
+        </bean>
+
+        <bean name="app" class="br.com.delogic.leitoor.configucao.Aplicacao" />
+
+        <!-- DATASOURCE ======================================================================================= -->
+        <bean id="leitoords" class="org.springframework.jndi.JndiObjectFactoryBean">
+            <property name="jndiName" value="java:comp/env/leitoords" />
+        </bean>
+
+        <bean id="EMAIL.USUARIO" class="java.lang.String">
+            <constructor-arg value="teste@delogic.com.br" />
+        </bean>
+
+        <bean id="EMAIL.SENHA" class="java.lang.String">
+            <constructor-arg value="aabbccddeeff" />
+        </bean>
+
+    </beans>
+
+    <!-- AMBIENTE DE DESENVOLVIMENTO ========================================================================== -->
+    <beans profile="DEV">
+
+        <bean name="app" class="br.com.delogic.leitoor.configucao.Aplicacao" />
+
+        <bean name="autenticacaoService"
+            class="br.com.delogic.leitoor.service.mock.AutenticacaoServiceMock" />
+
+        <!-- CONTENT MANAGER ================================================================================== -->
+        <bean id="contentManager"
+            class="br.com.delogic.csa.manager.content.ContentManagerImpl">
+            <property name="directory" value="resources-teste" />
+            <property name="iterator">
+                <bean class="br.com.delogic.leitoor.util.csa.UUIDIterator" />
+            </property>
+        </bean>
+
+        <!-- DATASOURCE ======================================================================================= -->
+        <bean id="leitoords" class="org.springframework.jndi.JndiObjectFactoryBean">
+            <property name="jndiName" value="java:comp/env/leitoords" />
+        </bean>
+
+        <!-- TRACING ========================================================================================== -->
+        <aop:aspectj-autoproxy proxy-target-class="true" />
+        <bean id="tracingManager"
+            class="br.com.delogic.csa.manager.tracing.TracingManagerAdviceImpl">
+            <property name="packages">
+                <list>
+                    <value>br.com.delogic.leitoor</value>
+                </list>
+            </property>
+        </bean>
+
+        <!-- SPRING-MVC -->
+        <mvc:resources mapping="/static-content/**"
+            location="resources-teste/" order="-1" />
+
+        <mvc:resources mapping="/resources/**" location="resources/"
+            order="-1" />
+
+        <bean id="EMAIL.USUARIO" class="java.lang.String">
+            <constructor-arg value="teste@delogic.com.br" />
+        </bean>
+
+        <bean id="EMAIL.SENHA" class="java.lang.String">
+            <constructor-arg value="aabbccddeeff" />
+        </bean>
+
+    </beans>
+
+    <beans profile="TEST">
+
+        <bean name="autenticacaoService"
+            class="br.com.delogic.leitoor.service.mock.AutenticacaoServiceMock" />
+
+        <bean id="EMAIL.USUARIO" class="java.lang.String">
+            <constructor-arg value="teste@delogic.com.br" />
+        </bean>
+
+        <bean id="EMAIL.SENHA" class="java.lang.String">
+            <constructor-arg value="aabbccddeeff" />
+        </bean>
+
+        <!-- CONTENT MANAGER ================================================================================== -->
+        <bean id="contentManager"
+            class="br.com.delogic.csa.manager.content.ContentManagerImpl">
+            <property name="directory"
+                value="file:#{systemProperties['java.io.tmpdir']}" />
+            <property name="servletContext" ref="mockServletContext" />
+            <property name="iterator">
+                <bean class="br.com.delogic.leitoor.util.csa.UUIDIterator" />
+            </property>
+        </bean>
+
+        <!-- DATASOURCE ======================================================================================= -->
+        <bean id="leitoords" class="org.apache.tomcat.jdbc.pool.DataSource">
+            <property name="driverClassName" value="org.postgresql.Driver" />
+            <property name="url"
+                value="jdbc:postgresql://localhost:5432/leitoor" />
+            <property name="username" value="postgres" />
+            <property name="password" value="manager" />
+        </bean>
+
+        <!-- SERVIÇOS MOCK ==================================================================================== -->
+        <bean id="mockServletContext" class="org.springframework.mock.web.MockServletContext"
+            p:contextPath="leitoor" />
+
+        <bean id="mockHttpServletRequest"
+            class="org.springframework.mock.web.MockHttpServletRequest"
+            p:contextPath="leitoor" />
+
+        <bean id="mockHttpSession" class="org.springframework.mock.web.MockHttpSession" />
+
+    </beans>
+
+</beans>

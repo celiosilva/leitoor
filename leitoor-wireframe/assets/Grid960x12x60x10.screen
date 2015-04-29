@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
+  <widgets xsi:type="model:WidgetGroup" id="13" measuredWidth="960" measuredHeight="1000" name="Grid 960x12">
+    <widgets xsi:type="model:WidgetGroup" id="28" measuredWidth="960" measuredHeight="1000">
+      <widgets xsi:type="model:Hotspot" id="15" x="10" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="16" x="90" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="17" x="170" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="18" x="250" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="19" x="330" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="20" x="410" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="21" x="490" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="22" x="570" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="23" x="650" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="24" x="730" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="25" x="810" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Hotspot" id="26" x="890" width="61" height="1000" measuredWidth="61" measuredHeight="1000"/>
+      <widgets xsi:type="model:Panel" id="27" width="960" height="1000" measuredWidth="960" measuredHeight="1000" annotation="true" alpha="146" foreground="#ffffff"/>
+    </widgets>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

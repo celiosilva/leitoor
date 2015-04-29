@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Panel" id="15" width="1200" height="1200" measuredWidth="1200" measuredHeight="1200" background="#eeeeee" foreground="#eeeeee"/>
+  <widgets xsi:type="model:Shape" id="16" width="1200" height="50" measuredWidth="1200" measuredHeight="50" layoutParams="anchor-center|anchor-top" background="#333333" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="11" x="120" measuredWidth="960" measuredHeight="1200">
+    <screen xsi:type="model:WidgetGroup" href="Grid960x12x60x10.screen#Grid%20960x12"/>
+    <overrides>
+      <widgets ref="28" height="1200"/>
+      <widgets ref="15" height="1200"/>
+      <widgets ref="16" height="1200"/>
+      <widgets ref="17" height="1200"/>
+      <widgets ref="18" height="1200"/>
+      <widgets ref="19" height="1200"/>
+      <widgets ref="20" height="1200"/>
+      <widgets ref="21" height="1200"/>
+      <widgets ref="22" height="1200"/>
+      <widgets ref="23" height="1200"/>
+      <widgets ref="24" height="1200"/>
+      <widgets ref="25" height="1200"/>
+      <widgets ref="26" height="1200"/>
+      <widgets ref="27" height="1200">
+        <attributes key="annotation" value="true"/>
+        <attributes key="alpha" value="128"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="12" x="120" measuredWidth="960" measuredHeight="50" layoutParams="anchor-center|anchor-top">
+    <screen xsi:type="model:Screen" href="header.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="11"/>
+      <widgetChanges xsi:type="o:Delete" ref="10"/>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgetChanges xsi:type="o:Delete" ref="8"/>
+      <widgets ref="4" width="87" link="../home-completa.screen"/>
+      <widgets ref="12" x="704" text="Bem Vindo Celio"/>
+      <widgets ref="13" link="../home.screen"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="19" x="240" width="120" height="49" text="Atividades" measuredWidth="120" measuredHeight="49" background="#333333" foreground="#ffffff" border="false" link="../atividades.screen" shapeType="rectangle">
+    <font size="16px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler>
+    <guides position="111"/>
+  </vRuler>
+  <font size="12px"/>
+</model:Screen>

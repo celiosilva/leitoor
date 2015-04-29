@@ -1,0 +1,626 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+@import "../bootstrap-3.1.1-dist/css/bootstrap.css";
+
+@import "../malihu-scrollbar/jquery.mCustomScrollbar.css";
+
+@import "../chosen_v1.1.0/chosen.min.css";
+
+@import "../owl/owl.carousel.css";
+
+@import "../owl/owl.theme.css";
+
+/*modal recuperar senha*/
+
+/* centralizando modal-senha no centro da tela verticalmente */
+#modal-senha {
+    height: @modalHeight;
+    top: 35%;
+    margin-top: -1* (@modalHieght/2);
+}
+
+.borda-inferior {
+    border-bottom: 1px groove #efeced;
+}
+
+.modal-backdrop {
+    background-color: #fff;
+}
+
+.recuperar-senha label {
+    margin-top: 5px;
+}
+
+.recuperar-senha .titulo {
+    font-size: 18px;
+    padding: 9px 0 9px 0;
+}
+
+.modal-custom .modal-content {
+    padding: 0px 10px 0px 10px;
+    border-radius: 1px !important;
+}
+
+/* tela de login */
+.bt-social {
+    border-radius: 0px !important;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.alertaLogin .alert {
+    margin: 10px 0 5px 0;
+}
+
+.login-social {
+    padding-top: 15px;
+}
+
+.inter-login {
+    padding-top: 45px;
+    font-size: 20px;
+}
+
+.janela {
+    background-color: #f2f2f2;
+    padding-bottom: 15px;
+    margin: 10px 0 10px 0;
+}
+
+.janela .titulo {
+    font-size: 18px;
+    padding: 9px 0 9px 0;
+    border-bottom: 1px groove #efeced;
+}
+
+.titulo a {
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.formulario-cadastro input {
+    margin-top: 8px;
+}
+
+.formulario-login, .formulario-cadastro {
+    padding: 9px 0 9px 0;
+}
+
+.formulario-login .form-group .control-label, .formulario-cadastro .form-group .control-label
+    {
+    text-align: left !important;
+}
+
+.formulario-login label {
+    padding: 5px 0 0 0;
+}
+
+/* MAIN LAYOUT, SPACES */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+}
+
+html, body, .full-height {
+    height: 100%;
+}
+
+body.double-header {
+    padding-top: 110px;
+}
+
+.main-content {
+    width: 900px;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 920px;
+}
+
+#header div {
+    z-index: 1000000;
+}
+
+/* LAYOUT PAGINAS COM FUNDO CINZA */
+body.pagina-fundo-cinza {
+    background-color: #EEEEEE;
+    padding-top: 0px;
+}
+
+body.pagina-fundo-cinza .main-content {
+    /*background-color: white;
+    min-height: 900px;*/
+    padding: 60px 15px 10px 15px;
+    height: 100%;
+}
+
+body.pagina-fundo-cinza.double-header .main-content {
+    padding-top: 110px;
+    height: 100%;
+}
+
+/* NAVBAR CUSTOM FORMATTING */
+.leitoor .navbar-brand, .leitoor .nav-item {
+    font-size: 20px;
+}
+
+.top-aligned {
+    vertical-align: top;
+}
+
+/* HOME CAROUSEL */
+#home-slider img {
+    width: 900px;
+    height: auto;
+}
+
+#home-slider .caption {
+    font-size: 16px;
+    color: #FFF;
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+/* WIZARD GREEN BAR */
+.top-green {
+    background-color: #A9C638;
+    margin-top: 50px;
+}
+
+.top-green ul {
+    vertical-align: middle;
+    padding: 13px 0;
+    padding-bottom: 0px;
+}
+
+.top-green li {
+    color: #fff !important;
+    font-size: 20px;
+    display: block;
+    padding-right: 10px;
+}
+
+.top-green .badge {
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.top-green .invert .badge {
+    color: white;
+    background-color: black;
+}
+
+.top-green li.invert {
+    color: black !important;
+}
+
+/* TABS */
+.fundo-cinza-claro {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.fundo-cinza-escuro {
+    background-color: #777;
+    color: #fff;
+}
+
+.fundo-cinza-claro a, .fundo-cinza-escuro a {
+    color: #fff;
+}
+
+/* CORES
+@gray-lighter: lighten(#000, 93.5%); // #eee
+@brand-primary: #428bca;
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+
+*/
+
+/* LISTA ATIVIDADES E ACOMPANHAMENTO */
+#atividades-ajuda, #acompanhamento-ajuda {
+    margin-top: 10px;
+}
+
+.miniatura-atividade, .miniatura-acompanhamento {
+    display: inline-block;
+    padding: 3px;
+    width: 120px;
+    height: 130px;
+    background-color: #F3F3F3;
+    margin-bottom: 3px;
+    line-height: 130px;
+}
+
+.miniatura-atividade div, .miniatura-acompanhamento div {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item-atividade, .item-acompanhamento {
+    margin: 10px 0px;
+}
+
+.item-atividade .btn-group button:first-child {
+    width: 90px;
+}
+
+.item-acompanhamento-azul .miniatura-acompanhamento {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+.item-acompanhamento-verde .miniatura-acompanhamento,
+    .item-acompanhamento-verde .btn {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.item-acompanhamento-amarelo .miniatura-acompanhamento,
+    .item-acompanhamento-amarelo .btn {
+    background-color: #f0ad4e;
+    color: #000;
+}
+
+.item-acompanhamento-vermelho .miniatura-acompanhamento,
+    .item-acompanhamento-vermelho .btn {
+    background-color: #d9534f;
+    color: #000;
+}
+
+/* ENVIO DE MATERIAL */
+#form-enviar-material {
+    margin-top: 10px;
+}
+
+/* LEITURA DE MATERIAL */
+.reading-pagination {
+    margin: 0 20px;
+}
+
+.reading-pagination span {
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar input.btn-white, .navbar a.btn-white {
+    color: #000 !important;
+    background-color: #fff !important;
+    vertical-align: top !important;
+    padding-top: 5px;
+}
+
+.navbar a.seta {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline !important;
+    color:
+}
+
+.navbar.leitoor-wizard a {
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.navbar input.btn-white:hover, .navbar a.btn-white:hover {
+    background-color: #eee !important;
+}
+
+#titulo-atividade .titulo {
+    display: inline-block;
+    max-width: 500px;
+    overflow: hidden;
+    height: 25px;
+    margin: 0;
+}
+
+.frame-leitura {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#tela-cheia {
+    cursor: pointer;
+}
+
+body.tela-cheia #header .navbar {
+    display: none;
+}
+
+body.tela-cheia .container-fluid {
+    width: 100%;
+}
+
+body.tela-cheia .row {
+    margin: 0;
+}
+
+body.tela-cheia #titulo-atividade .titulo {
+    max-width: 100%;
+}
+
+body.tela-cheia .top-green {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    margin: 0;
+}
+
+body.tela-cheia .frame-leitura {
+    position: absolute;
+    left: 0px;
+    top: 56px;
+    margin: 0px;
+    padding-bottom: 60px;
+}
+
+body.tela-cheia {
+    overflow: hidden !important;
+}
+
+body.leitura {
+    padding-top: 95px;
+}
+
+body.leitura .main-content {
+    padding: 0;
+    padding-top: 10px;
+}
+
+.glyphicon.disabled {
+    color: #ddd;
+    cursor: default;
+}
+
+#page-navigation {
+    width: 50px;
+    color: #000;
+}
+
+.tooltip-inner {
+    white-space: nowrap;
+}
+
+.config-pag {
+    background-color: #EDEDED;
+    margin-bottom: 20px;
+}
+
+.config-pag .abrir-pagina {
+    background-color: #CBCBCB;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.config-pag .abrir-pagina i {
+    font-size: 22px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.config-pag .numero {
+    padding: 10px 0 10px 0;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.config-pag .tempo-min {
+    width: 260px;
+    padding: 8px 0 8px 0;
+}
+
+.config-pag .add {
+    margin: 8px;
+}
+
+.config-pag .tempo-min .input-group-addon {
+    background-color: #CBCBCB;
+}
+
+.config-pag .questionario .aviso {
+    padding: 10px 10px 0 10px;
+}
+
+.config-pag .questionario .form-group {
+    padding: 0 10px 10px 10px;
+    margin-bottom: 5px;
+}
+
+.config-pag .form-group .bootstrap-tagsinput {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 34px;
+    margin-bottom: 0
+}
+
+.btn-remover:HOVER span:BEFORE {
+    content: "Remover ";
+}
+
+.config-pag .pdf {
+    width: 100%;
+    height: 300px;
+}
+
+.form-group .control-label p {
+    margin: 0;
+}
+
+textarea {
+    min-height: 34px;
+}
+
+.acomp .leitura {
+    background-color: #EDEDED;
+}
+
+.acomp .questionario {
+    background-color: #C7E4F0;
+}
+
+.acomp .titulo {
+    padding: .5em .6em .6em;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.acomp .geral .titulo {
+    background-color: #777;
+    color: #fff;
+}
+
+.acomp .questionario .titulo {
+    background-color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.acomp .leitura .titulo {
+    background-color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.acomp .geral .nome-aluno p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.acomp .leitura .progresso {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.acomp .leitura .progress {
+    margin-bottom: 15px;
+}
+
+.acomp .questionario .acertos {
+    color: #49AFCD;
+}
+
+.acomp .questionario .erros {
+    color: #FF0000;
+}
+
+.acomp .questionario .contagem {
+    width: inherit;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.acomp .questionario .resultado {
+    margin-right: 15px;
+}
+
+.acomp .progress {
+    height: 30px;
+}
+
+.acomp .progress .progress-bar {
+    line-height: 30px;
+}
+
+.legendas {
+    line-height: 30px;
+    font-size: 16px;
+    margin: 0 1px 20px 1px;
+}
+
+.nao-iniciado {
+    background-color: #DC3912;
+    color: #fff;
+}
+
+.abaixo50 {
+    background-color: #FF9900;
+    color: #fff;
+}
+
+.acima50 {
+    background-color: #3366CC;
+    color: #fff;
+}
+
+.finalizado {
+    background-color: #109618;
+    color: #fff;
+}
+
+.avaliacao .cab-dados p {
+    font-size: 20px;
+}
+
+.avaliacao .quest .tit-quest {
+    font-size: 17px;
+}
+
+.avaliacao .quest .resposta {
+    background-color: #eee;
+    padding: 10px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+.avaliacao .quest .btn-nao-selec {
+    color: #aaa;
+    background-color: #eee;
+    border-color: #eee;
+    height: 40px;
+    width: 50px;
+}
+
+.avaliacao .quest .btn i {
+    vertical-align: middle;
+}
+
+.avaliacao .quest .btn-incorreto.active {
+    color: #fff;
+    background-color: #FF0000;
+}
+
+.avaliacao .quest .btn-correto.active {
+    color: #fff;
+    background-color: #5CB85C;
+}
+
+.margem-topo-15 {
+    margin-top: 15px;
+}
+
+.chart {
+    display: inline-block;
+}
+
+/* .chart > div {
+    position: static;
+} */

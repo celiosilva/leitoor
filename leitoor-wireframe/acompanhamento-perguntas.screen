@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Master" id="97" height="1200" measuredWidth="1200" measuredHeight="1200">
+    <screen xsi:type="model:Screen" href="assets/template.screen#/"/>
+    <overrides>
+      <widgets ref="16" height="49"/>
+      <widgets ref="11" height="1200"/>
+      <widgets ref="12" height="49"/>
+      <widgets ref="12/1" height="49"/>
+      <widgets ref="12/4" y="4"/>
+      <widgets ref="12/8" height="49"/>
+      <widgets ref="12/9" height="49"/>
+      <widgets ref="12/10" height="49"/>
+      <widgets ref="12/11" height="49"/>
+      <widgets ref="12/12" height="49"/>
+      <widgets ref="12/13" height="49"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="174" x="130" y="140" height="805" measuredWidth="940" measuredHeight="805">
+    <screen xsi:type="model:Screen" href="assets/painel-conteudo.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgetChanges xsi:type="o:Delete" ref="4"/>
+      <widgets ref="1" x="-566" y="-153" width="940" height="805"/>
+      <widgets ref="2" x="-566" y="-153" width="940"/>
+      <widgets ref="5" x="-566" y="-153" width="295" text="ATIVIDADE BI1 - 6ª B"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="253" x="150" y="290" width="907" text="1 - Quem atirou o pau no gato ? *1 Ponto*" measuredWidth="907" measuredHeight="36">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="282" x="895" y="330" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="{check}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="283" x="176" y="330" width="705" height="42" text="Lorem Ipsum Dolor sit amet" measuredWidth="705" measuredHeight="42" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle-rounded">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="284" x="950" y="330" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="{delete}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="289" x="150" y="230" measuredWidth="141" measuredHeight="43">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%203"/>
+    <overrides>
+      <widgets ref="131" text="Os Lusíadas">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="290" x="150" y="200" text="Material" measuredWidth="78" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="291" x="392" y="200" text="Aluno" measuredWidth="58" measuredHeight="36">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="292" x="392" y="230" measuredWidth="176" measuredHeight="43">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%203"/>
+    <overrides>
+      <widgets ref="131" text="Rafael da Silva">
+        <attributes key="foreground" value="#444444"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="293" x="150" y="400" width="907" text="2 - E o gato morreu ? *2 Pontos*" measuredWidth="907" measuredHeight="36">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="294" x="895" y="505" width="50" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="{check}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="298" x="176" y="442" width="705" height="167" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud \nexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit \nesse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia \ndeserunt mollit anim id est laborum." measuredWidth="705" measuredHeight="167" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle-rounded">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="300" x="150" y="632" width="907" text="3 - Onde estava dona Chica nesse momento ? *5 Pontos*" measuredWidth="907" measuredHeight="36">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="302" x="176" y="672" width="705" height="42" text="Lorem Ipsum Dolor sit amet" measuredWidth="705" measuredHeight="42" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle-rounded">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="303" x="950" y="673" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="{delete}">
+        <attributes key="background" value="#cc0000"/>
+        <attributes key="foreground" value="#cc0000"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="308" x="950" y="505" width="50" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="{delete}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="310" x="895" y="673" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="{check}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="311" x="150" y="870" measuredWidth="121" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="121" height="40" text="Salvar {check}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Link" id="312" x="456" y="876" text="{assets/long-arrow-left} Voltar" measuredWidth="63" measuredHeight="28" link="acompanhamento.screen">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="313" x="500" y="70" measuredWidth="406" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" text="Respostas do Questionário"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="314" x="130" y="70" width="110" measuredWidth="110" measuredHeight="56" link="home-completa.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" width="110" text="%(color:gray)%(font:-5)Home{assets/double-angle-right}%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="315" x="240" y="70" width="257" measuredWidth="257" measuredHeight="56" link="acompanhamento.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Heading%202"/>
+    <overrides>
+      <widgets ref="130" width="257" text="%(color:gray)%(font:-5)Acompanhamento{assets/double-angle-right}%%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="316" x="920" y="464" width="107" text="Correto" measuredWidth="107" measuredHeight="36" textAlignment="Center">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="317" x="920" y="632" width="107" text="Incorreto" measuredWidth="107" measuredHeight="36" textAlignment="Center">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="318" x="280" y="870" measuredWidth="170" measuredHeight="40" link="acompanhamento.screen">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="170" height="40" text="Salvar e Voltar {assets/long-arrow-left}">
+        <attributes key="background" value="#5cb85c"/>
+        <attributes key="foreground" value="#5cb85c"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="319" x="920" y="290" width="107" text="N/A" measuredWidth="107" measuredHeight="36" textAlignment="Center">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="320" x="1005" y="330" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="1/2">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="324" x="1005" y="505" measuredWidth="55" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="55" height="40" text="1/2">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="327" x="1005" y="673" measuredWidth="55" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="55" height="40" text="1/2">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="328" x="150" y="736" width="907" text="4 - Onde estava dona Chica nesse momento? *2 Pontos*" measuredWidth="907" measuredHeight="36">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="329" x="176" y="776" width="705" height="42" text="Lorem Ipsum Dolor sit amet" measuredWidth="705" measuredHeight="42" background="#eeeeee" border="false" textAlignment="Left" shapeType="rectangle-rounded">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="331" x="895" y="777" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="{check}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="332" x="1005" y="777" measuredWidth="55" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="55" height="40" text="1/2">
+        <attributes key="background" value="#6fa8dc"/>
+        <attributes key="foreground" value="#6fa8dc"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="333" x="950" y="777" measuredWidth="50" measuredHeight="40">
+    <screen xsi:type="model:WidgetGroup" href="assets/Bootstrap/Bootstrap.screen#Label%20Success"/>
+    <overrides>
+      <widgets ref="31" width="50" height="40" text="{delete}">
+        <attributes key="background" value="#eeeeee"/>
+        <attributes key="foreground" value="#eeeeee"/>
+        <font size="15px"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Label" id="334" x="920" y="736" width="107" text="1/2 Correta" measuredWidth="107" measuredHeight="36" textAlignment="Center">
+    <font size="20px" underline="false"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

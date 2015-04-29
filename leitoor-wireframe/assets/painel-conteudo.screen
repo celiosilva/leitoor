@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Shape" id="1" width="601" height="305" measuredWidth="601" measuredHeight="305" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="2" width="601" height="50" measuredWidth="601" measuredHeight="50" layoutParams="anchor-left,anchor-right|anchor-top" background="#cccccc" foreground="#999999" border="false" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="4" x="143" width="121" height="50" text="O que é ?" measuredWidth="121" measuredHeight="50" layoutParams="anchor-left|anchor-top" background="#999999" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="5" width="143" height="50" text="ATIVIDADES" measuredWidth="143" measuredHeight="50" layoutParams="anchor-left|anchor-top" border="false" shapeType="rectangle">
+    <font size="20px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="9" x="424" y="7" text="Criar Atividade {assets/plus}" measuredWidth="165" measuredHeight="36" layoutParams="anchor-right|anchor-top" textAlignment="Center" foreground="#ffffff">
+    <font size="20px" underline="true"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
